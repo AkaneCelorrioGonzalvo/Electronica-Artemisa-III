@@ -3315,6 +3315,16 @@
 		)
 		(uuid "5e519008-77bb-4567-a566-226875226cb6")
 	)
+	(text "QUITAR BOTÓN RESET\n"
+		(exclude_from_sim no)
+		(at 125.476 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a1c6ede1-278a-4e63-94c2-91f86025a996")
+	)
 	(text "Memoria"
 		(exclude_from_sim no)
 		(at 181.61 77.47 0)

@@ -3,3 +3,5 @@ Nano 33 BLE Sense; https://docs.arduino.cc/hardware/nano-33-ble-sense/#tech-spec
 GPS L80-R https://how2electronics.com/how-to-interface-quectel-l80-gps-module-with-arduino/
 LoRa Ebyte https://www.es-ebyte.com/products/E220-900T22D
 MicroSD https://es.aliexpress.com/item/1005001861949506.html?spm=a2g0o.productlist.main.24.100d56af2QAm7h&aem_p4p_detail=202605050019065897774974214760007563725&algo_pvid=ac7423d9-5545-4b0b-80c4-58d352fd46e6&algo_exp_id=ac7423d9-5545-4b0b-80c4-58d352fd46e6-23&pdp_ext_f=%7B"order"%3A"1067"%2C"eval"%3A"1"%2C"fromPage"%3A"search"%7D&pdp_npi=6%40dis%21EUR%210.46%210.34%21%21%210.52%210.38%21%40211b61bb17779655463347085e927a%2112000017898856850%21sea%21ES%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3Ad413f6e2%3Bm03_new_user%3A-29895&curPageLogUid=FySERULxNc6j&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005001861949506%7C_p_origin_prod%3A&search_p4p_id=202605050019065897774974214760007563725_6
+
+QUITAR BOTÓN RESET

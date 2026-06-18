@@ -1294,196 +1294,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Screw_Terminal_01x02"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Screw_Terminal_01x02"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "screw terminal"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TerminalBlock*:*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Screw_Terminal_01x02_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.5334 -2.2098) (xy 0.3302 -3.048)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.3556 0.508) (xy 0.508 -0.3302)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.3556 -2.032) (xy 0.508 -2.8702)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -2.54)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
 				(offset 1.016)
@@ -2377,28 +2187,46 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:LM1117MP-3.3"
+		(symbol "Regulator_Switching:TSR2-2433N"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -3.81 3.175 0)
+				(at -7.112 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "LM1117MP-3.3"
-				(at 0 3.175 0)
+			(property "Value" "TSR2-2433N"
+				(at 1.524 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TSR2-24xxN_TSR2-24xxxN_THT"
+				(at 0 -6.096 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.tracopower.com/products/tsr2n.pdf"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "2A step-down regulator, fixed 3.3V output voltage, 4.6-36V input voltage, TO-220 compatible LM78xx replacement"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2407,7 +2235,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1117.pdf"
+			(property "ki_keywords" "Traco non-isolated pol dcdc converter single"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2416,7 +2244,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "800mA Low-Dropout Linear Regulator, 3.3V fixed output, SOT-223"
+			(property "ki_fp_filters" "Converter*DCDC*TRACO*TSR2*24xxN*24xxxN*THT*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2425,28 +2253,10 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "linear regulator ldo fixed positive"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?223*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LM1117MP-3.3_0_1"
+			(symbol "TSR2-2433N_0_1"
 				(rectangle
-					(start -5.08 -5.08)
-					(end 5.08 1.905)
+					(start -7.62 5.08)
+					(end 7.62 -2.54)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -2456,29 +2266,11 @@
 					)
 				)
 			)
-			(symbol "LM1117MP-3.3_1_1"
+			(symbol "TSR2-2433N_1_1"
 				(pin power_in line
-					(at -7.62 0 0)
+					(at -10.16 2.54 0)
 					(length 2.54)
-					(name "VI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
+					(name "Vin"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2493,10 +2285,10 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 7.62 0 180)
+				(pin power_in line
+					(at 0 -5.08 90)
 					(length 2.54)
-					(name "VO"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2504,6 +2296,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "Vout"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3381,7 +3191,7 @@
 	)
 	(rectangle
 		(start 69.85 25.4)
-		(end 95.25 50.8)
+		(end 100.33 50.8)
 		(stroke
 			(width 0)
 			(type default)
@@ -3414,18 +3224,6 @@
 			(type none)
 		)
 		(uuid caf66fb9-cfb0-487b-b7d4-5fd511a904a4)
-	)
-	(rectangle
-		(start 99.06 128.27)
-		(end 181.61 161.29)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid ed22abec-6894-427a-bc28-d318ea0fafd5)
 	)
 	(text "GPS"
 		(exclude_from_sim no)
@@ -3471,17 +3269,6 @@
 		)
 		(uuid "5e519008-77bb-4567-a566-226875226cb6")
 	)
-	(text "Activador de paracaídas"
-		(exclude_from_sim no)
-		(at 99.06 128.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7ecf1c0a-8446-4d17-89dd-eb1ec6f70ead")
-	)
 	(text "Memoria"
 		(exclude_from_sim no)
 		(at 181.61 77.47 0)
@@ -3505,16 +3292,10 @@
 		(uuid "c8c05e25-6347-40f8-9abc-2ac5cce11656")
 	)
 	(junction
-		(at 153.67 146.05)
+		(at 64.77 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0d7f3fbe-f9d8-4e5d-9faf-606d1c82263b")
-	)
-	(junction
-		(at 73.66 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "20c081dc-6e42-4c35-bc8a-8893964b074f")
+		(uuid "54f113c5-95c2-4299-8d14-18a743e9064a")
 	)
 	(junction
 		(at 236.22 148.59)
@@ -3529,52 +3310,34 @@
 		(uuid "5f268257-a552-4ba7-bbc7-94f4f119458e")
 	)
 	(junction
-		(at 64.77 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "70a1e2e5-289f-46f0-bb2a-f022f3241a26")
-	)
-	(junction
-		(at 113.03 146.05)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7a97c3d3-121a-461f-b399-762281cba1bb")
-	)
-	(junction
 		(at 226.06 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7e0f31ea-42d1-405a-8ed6-23924f5d8f70")
 	)
 	(junction
-		(at 163.83 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "89b5e8e2-30dc-4094-a766-dc7a72d5141b")
-	)
-	(junction
-		(at 82.55 44.45)
+		(at 83.82 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8d93e464-8bb1-4502-8687-7c313852ab8b")
 	)
 	(junction
-		(at 91.44 34.29)
+		(at 95.25 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ab5293e7-7de2-43da-ac72-2f613f430c62")
-	)
-	(junction
-		(at 123.19 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cc513d57-8e8d-414e-89ba-bcd4f21282a2")
+		(uuid "b178bbad-fff9-4a67-88bd-319b71dac1f3")
 	)
 	(junction
 		(at 45.72 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e7a5b482-6d3a-476d-b0ef-8fc8f301f41f")
+	)
+	(junction
+		(at 73.66 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ead2a13e-6c11-4b46-bbb6-c42f7c4a0680")
 	)
 	(no_connect
 		(at 35.56 101.6)
@@ -3615,26 +3378,6 @@
 	(no_connect
 		(at 113.03 107.95)
 		(uuid "f1f7a6f2-9a3b-4897-947f-7eaf4393b96e")
-	)
-	(wire
-		(pts
-			(xy 163.83 138.43) (xy 163.83 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02cd837d-7b29-49c9-a77e-6fc18b3f5394")
-	)
-	(wire
-		(pts
-			(xy 137.16 165.1) (xy 148.59 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08e4fe59-1c5c-4c1a-a476-5319e1061dae")
 	)
 	(wire
 		(pts
@@ -3688,16 +3431,6 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 34.29) (xy 99.06 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12dd24bf-ae93-4b2e-8420-45623f6773a6")
-	)
-	(wire
-		(pts
 			(xy 236.22 133.35) (xy 236.22 135.89)
 		)
 		(stroke
@@ -3738,36 +3471,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 146.05) (xy 115.57 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e07a1c7-e406-4d51-b6d1-295a4d6fc8cf")
-	)
-	(wire
-		(pts
-			(xy 107.95 165.1) (xy 107.95 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f7bfedd-92d8-4094-be15-715e903d7584")
-	)
-	(wire
-		(pts
-			(xy 148.59 165.1) (xy 148.59 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25154185-3430-4b73-940b-48e6f19b452e")
-	)
-	(wire
-		(pts
 			(xy 45.72 77.47) (xy 58.42 77.47)
 		)
 		(stroke
@@ -3775,26 +3478,6 @@
 			(type default)
 		)
 		(uuid "2b841888-b982-466d-b621-017f82a881fa")
-	)
-	(wire
-		(pts
-			(xy 73.66 34.29) (xy 74.93 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d1624ce-6313-4d86-960e-2645e076dc18")
-	)
-	(wire
-		(pts
-			(xy 163.83 135.89) (xy 163.83 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "341a34ad-cafa-44c3-a0be-b41bd9785f11")
 	)
 	(wire
 		(pts
@@ -3828,6 +3511,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 34.29) (xy 95.25 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4817ead5-c50a-42b4-82b9-075bac88fc49")
+	)
+	(wire
+		(pts
 			(xy 236.22 148.59) (xy 236.22 146.05)
 		)
 		(stroke
@@ -3848,43 +3541,13 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 165.1) (xy 107.95 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4efbaa19-dea7-449b-9fb9-f74756ff6c1e")
-	)
-	(wire
-		(pts
-			(xy 107.95 146.05) (xy 113.03 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f8611e8-7769-49e0-99f7-8d7602660053")
-	)
-	(wire
-		(pts
-			(xy 91.44 43.18) (xy 91.44 44.45)
+			(xy 95.25 43.18) (xy 95.25 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "60174477-a5cd-437b-8e10-28a0ce86a54a")
-	)
-	(wire
-		(pts
-			(xy 64.77 34.29) (xy 73.66 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "778dda82-2ef6-4566-8d15-ff4c99d421cf")
 	)
 	(wire
 		(pts
@@ -3898,26 +3561,6 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 41.91) (xy 82.55 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89dfff10-8ce9-4e5f-860c-1ee9beb1bded")
-	)
-	(wire
-		(pts
-			(xy 153.67 153.67) (xy 163.83 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a1d1338-fe70-47a0-b0b5-435c5598c760")
-	)
-	(wire
-		(pts
 			(xy 60.96 96.52) (xy 69.85 96.52)
 		)
 		(stroke
@@ -3925,16 +3568,6 @@
 			(type default)
 		)
 		(uuid "9841c159-4a5f-43a4-8147-6844898f2e36")
-	)
-	(wire
-		(pts
-			(xy 153.67 146.05) (xy 156.21 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99417383-f626-4e59-9064-320d1bb39d92")
 	)
 	(wire
 		(pts
@@ -3948,16 +3581,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 34.29) (xy 73.66 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e5e5baf-e1c6-4dcf-9e53-447ea194a7c2")
-	)
-	(wire
-		(pts
 			(xy 60.96 99.06) (xy 69.85 99.06)
 		)
 		(stroke
@@ -3968,33 +3591,13 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 146.05) (xy 153.67 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2421be7-e26c-4512-988e-c487c788f957")
-	)
-	(wire
-		(pts
-			(xy 82.55 44.45) (xy 91.44 44.45)
+			(xy 83.82 44.45) (xy 95.25 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a2e395f6-1504-458b-a249-f7610b928ed0")
-	)
-	(wire
-		(pts
-			(xy 123.19 138.43) (xy 123.19 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a39d3142-5b8a-4c9b-85e8-efad2c9d8347")
 	)
 	(wire
 		(pts
@@ -4008,23 +3611,13 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 135.89) (xy 123.19 132.08)
+			(xy 64.77 34.29) (xy 73.66 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ab1ba9dd-ea32-469c-a8d6-9fffd4c52b1c")
-	)
-	(wire
-		(pts
-			(xy 123.19 132.08) (xy 118.11 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aba47516-3680-486a-a4f1-f06dd79c5937")
+		(uuid "ac662460-1e76-4d6c-91ab-7a1ee3301b5a")
 	)
 	(wire
 		(pts
@@ -4048,16 +3641,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 153.67) (xy 123.19 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b340ddce-7432-4d77-874d-14608a2d2076")
-	)
-	(wire
-		(pts
 			(xy 45.72 86.36) (xy 45.72 88.9)
 		)
 		(stroke
@@ -4065,6 +3648,16 @@
 			(type default)
 		)
 		(uuid "b62dfc0f-d29d-4bbe-887e-4ffddffcf01e")
+	)
+	(wire
+		(pts
+			(xy 73.66 34.29) (xy 73.66 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8b918c0-9bf0-4823-a44b-472e68a78fe0")
 	)
 	(wire
 		(pts
@@ -4088,7 +3681,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 35.56) (xy 91.44 34.29)
+			(xy 95.25 35.56) (xy 95.25 34.29)
 		)
 		(stroke
 			(width 0)
@@ -4108,16 +3701,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 132.08) (xy 158.75 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2e2d793-cf6e-491d-aed9-f0a31f727ac4")
-	)
-	(wire
-		(pts
 			(xy 209.55 82.55) (xy 219.71 82.55)
 		)
 		(stroke
@@ -4128,7 +3711,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 44.45) (xy 82.55 44.45)
+			(xy 73.66 44.45) (xy 83.82 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4138,13 +3721,13 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 153.67) (xy 123.19 153.67)
+			(xy 83.82 41.91) (xy 83.82 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d4873264-1883-4c57-bf86-837c94d94c58")
+		(uuid "d812f6e6-36f3-448f-ba36-1dfbad8e997f")
 	)
 	(wire
 		(pts
@@ -4158,13 +3741,13 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 34.29) (xy 91.44 34.29)
+			(xy 95.25 34.29) (xy 102.87 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ef58ffac-3e76-40cc-b3df-49bd238777eb")
+		(uuid "ddc46726-4e52-4d5f-805d-333a20835e62")
 	)
 	(wire
 		(pts
@@ -4175,16 +3758,6 @@
 			(type default)
 		)
 		(uuid "f994676f-0e48-4f60-99ce-216130bd86d6")
-	)
-	(wire
-		(pts
-			(xy 163.83 153.67) (xy 163.83 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc1f8a64-8733-4b43-b602-1f9087c87b2d")
 	)
 	(wire
 		(pts
@@ -4205,16 +3778,6 @@
 			(justify left bottom)
 		)
 		(uuid "014ec452-cc2b-4c7d-959b-147339c4d5c6")
-	)
-	(label "PARACAIDAS"
-		(at 137.16 165.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "31d1ea69-6b1d-41ba-9985-1d8f8a6760df")
 	)
 	(label "MOSI"
 		(at 219.71 87.63 180)
@@ -4295,16 +3858,6 @@
 			(justify right bottom)
 		)
 		(uuid "a46fa550-d0a1-40c2-b36f-309f8e74dc2b")
-	)
-	(label "DROGUE"
-		(at 100.33 165.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d34421be-f6a4-4086-aa04-fa37719a5578")
 	)
 	(symbol
 		(lib_id "Device:Buzzer")
@@ -4441,80 +3994,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:IRLML0030")
-		(at 120.65 146.05 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "172dcfcd-e840-4c82-b26c-9df0766b62de")
-		(property "Reference" "Q3"
-			(at 127 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "IRLML0030"
-			(at 124.46 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 125.73 147.955 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df"
-			(at 120.65 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 120.65 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4b3b2f79-fe39-4b55-823f-addc6e700bbf")
-		)
-		(pin "2"
-			(uuid "95007bb5-2052-4e0f-8ddd-0728a8f5e7f1")
-		)
-		(pin "3"
-			(uuid "c47d2e5e-0eb2-44d0-b0c9-d05dc80734dc")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
-					(reference "Q3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Polarized_US")
 		(at 73.66 39.37 0)
 		(unit 1)
@@ -4583,154 +4062,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 128.27 135.89 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "24e77f46-c870-4c2d-af22-f38b95193eb5")
-		(property "Reference" "J4"
-			(at 130.81 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Terminal Drogue"
-			(at 124.46 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
-			(at 128.27 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 128.27 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 128.27 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Enlace" "https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/282837-2/2187973"
-			(at 128.27 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "81c6b14b-1b24-497c-b974-e4a00d07846a")
-		)
-		(pin "2"
-			(uuid "d14fdf7b-33de-4891-8058-8b8306b873c8")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 153.67 149.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2b31846f-e681-4de6-ac4d-192d7e3fdf12")
-		(property "Reference" "R5"
-			(at 156.21 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 156.21 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 151.892 149.86 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 153.67 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "79b89866-5163-4e61-b601-8ac4f504df8b")
-		)
-		(pin "2"
-			(uuid "a2c76af7-8ac3-47a2-b87f-7fd2764460c6")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
-		(at 99.06 34.29 0)
+		(at 102.87 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4739,7 +4072,7 @@
 		(fields_autoplaced yes)
 		(uuid "2e31e43d-8176-4ee0-b35a-8e8c25db8cd4")
 		(property "Reference" "#PWR08"
-			(at 99.06 38.1 0)
+			(at 102.87 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4748,7 +4081,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 99.06 29.21 0)
+			(at 102.87 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4756,7 +4089,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 34.29 0)
+			(at 102.87 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4765,7 +4098,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 34.29 0)
+			(at 102.87 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4774,7 +4107,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 99.06 34.29 0)
+			(at 102.87 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4789,83 +4122,6 @@
 			(project ""
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
 					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 168.91 135.89 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "315781af-33da-4b88-86bd-755e6eb0f62a")
-		(property "Reference" "J3"
-			(at 171.45 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Terminal Drogue"
-			(at 165.1 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
-			(at 168.91 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 168.91 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 168.91 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Enlace" "https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/282837-2/2187973"
-			(at 168.91 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "86de3fdb-988c-410f-896b-4c46599e3d82")
-		)
-		(pin "2"
-			(uuid "796e3d21-ad41-476d-9c0b-471ef6c951b0")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
-					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -5029,7 +4285,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 82.55 44.45 0)
+		(at 83.82 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5037,7 +4293,7 @@
 		(dnp no)
 		(uuid "4b7c2ae1-b410-42df-bf8b-59ea8c1bc175")
 		(property "Reference" "#PWR019"
-			(at 82.55 50.8 0)
+			(at 83.82 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5046,7 +4302,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 82.55 48.26 0)
+			(at 83.82 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5054,7 +4310,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 82.55 44.45 0)
+			(at 83.82 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5063,7 +4319,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 44.45 0)
+			(at 83.82 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5072,7 +4328,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 82.55 44.45 0)
+			(at 83.82 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5086,142 +4342,6 @@
 			(project "PlacaJunio"
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
 					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 113.03 149.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4ccb8e51-877d-4f3b-9c13-62e2a7cb8af0")
-		(property "Reference" "R7"
-			(at 115.57 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 115.57 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 111.252 149.86 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.03 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 113.03 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "26d24995-527f-40ba-ba29-43020ab105f9")
-		)
-		(pin "2"
-			(uuid "d7eb9818-1b3e-4c5d-89e7-cf1b12ae8f60")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 151.13 132.08 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5b85210a-674a-4a53-9253-8e3e731152f3")
-		(property "Reference" "#PWR05"
-			(at 154.94 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+BATT"
-			(at 147.32 132.0799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 151.13 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 151.13 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 151.13 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1524e0f5-f37f-4b06-84aa-dc520110db90")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
-					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -5296,73 +4416,6 @@
 			(project "PlacaJunio"
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
 					(reference "Q4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 110.49 132.08 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5cd3775d-8279-46ad-b0eb-70f2ace7e605")
-		(property "Reference" "#PWR06"
-			(at 114.3 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+BATT"
-			(at 106.68 132.0799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 110.49 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 110.49 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 110.49 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5fed8f65-c93e-4d18-b650-b00c33701b0b")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
-					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -5463,75 +4516,6 @@
 			(project ""
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
 					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:LM1117MP-3.3")
-		(at 82.55 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6a0a331f-c734-4aeb-aff4-aa870618a49e")
-		(property "Reference" "U6"
-			(at 78.74 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM1117MP-3.3V"
-			(at 78.74 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 82.55 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1117.pdf"
-			(at 82.55 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 82.55 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1001ea0f-25ec-4a63-8887-b3ab00ba3084")
-		)
-		(pin "2"
-			(uuid "165fe2f1-04e3-45f5-95d6-53c7302e5a62")
-		)
-		(pin "3"
-			(uuid "f29c4b90-9c32-4b1a-a763-07a68ee3c049")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
-					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -5805,6 +4789,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Switching:TSR2-2433N")
+		(at 83.82 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "88c3e0c1-c2ca-4f39-803e-d05543ac890e")
+		(property "Reference" "U5"
+			(at 83.82 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TSR2-2433N"
+			(at 83.82 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TSR2-24xxN_TSR2-24xxxN_THT"
+			(at 83.82 42.926 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tsr2n.pdf"
+			(at 83.82 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2A step-down regulator, fixed 3.3V output voltage, 4.6-36V input voltage, TO-220 compatible LM78xx replacement"
+			(at 83.82 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "211c4aad-b023-4832-a2d0-74874d0f7873")
+		)
+		(pin "2"
+			(uuid "d6f43365-6408-412f-a649-d6f6eb10d013")
+		)
+		(pin "3"
+			(uuid "c471cc25-c576-4fee-88fb-839bdf45483e")
+		)
+		(instances
+			(project ""
+				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 191.77 82.55 90)
 		(unit 1)
@@ -5873,72 +4929,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 123.19 153.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "95cb446c-ada0-4fbf-9e38-c8ecead717be")
-		(property "Reference" "#PWR02"
-			(at 123.19 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 123.19 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 123.19 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 123.19 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 123.19 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2341c0de-006e-4bbb-b5be-03ce40202c26")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 236.22 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5998,81 +4988,6 @@
 			(project "PlacaJunio"
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 114.3 132.08 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a9530dac-0a76-4664-a51b-0b951590a9cf")
-		(property "Reference" "R8"
-			(at 114.3 134.62 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.7 Ohm, 2.5W max"
-			(at 110.49 137.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
-			(at 114.3 133.858 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 114.3 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 114.3 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Enlace" "https://www.digikey.es/es/products/detail/stackpole-electronics-inc/CSRT2512FT4R70-UP/14307409"
-			(at 114.3 132.08 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2ab28b0f-ca53-4784-96aa-4e7033d39e1d")
-		)
-		(pin "2"
-			(uuid "666ad229-5c83-4f61-8112-0c5864928c11")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
-					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -6495,7 +5410,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_US")
-		(at 91.44 39.37 0)
+		(at 95.25 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6503,7 +5418,7 @@
 		(dnp no)
 		(uuid "dba9cad1-a6f4-47a5-b18d-80e0ca155468")
 		(property "Reference" "C5"
-			(at 87.63 43.18 0)
+			(at 91.44 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6512,7 +5427,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 87.63 46.99 0)
+			(at 91.44 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6521,7 +5436,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 91.44 39.37 0)
+			(at 95.25 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6530,7 +5445,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 91.44 39.37 0)
+			(at 95.25 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6539,7 +5454,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 91.44 39.37 0)
+			(at 95.25 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6713,81 +5628,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 154.94 132.08 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dde8da51-f7f3-4fb2-b7f5-f3995882e19d")
-		(property "Reference" "R6"
-			(at 154.94 134.62 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.7 Ohm, 2.5W max"
-			(at 151.13 137.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
-			(at 154.94 133.858 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 154.94 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 154.94 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Enlace" "https://www.digikey.es/es/products/detail/stackpole-electronics-inc/CSRT2512FT4R70-UP/14307409"
-			(at 154.94 132.08 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2d8fcfe8-e315-4550-a752-3f42322f658a")
-		)
-		(pin "2"
-			(uuid "3dbd03d2-8989-47e0-b7b6-5268a7098948")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 64.77 36.83 0)
 		(unit 1)
@@ -6846,80 +5686,6 @@
 			(project "PlacaJunio"
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
 					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:IRLML0030")
-		(at 161.29 146.05 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e2cdb992-dfd9-49f2-8bd0-9f8aa1122e4d")
-		(property "Reference" "Q2"
-			(at 167.64 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "IRLML0030"
-			(at 165.1 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 166.37 147.955 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df"
-			(at 161.29 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 161.29 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "487c11a7-75cc-4a89-ba30-9128db833bf6")
-		)
-		(pin "2"
-			(uuid "a2e22163-b384-4238-af2f-6ccb0069e66a")
-		)
-		(pin "3"
-			(uuid "a0ed490e-6fbc-483c-b89a-fac99f5c5307")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
-					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -7057,72 +5823,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 163.83 153.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eeddf718-70eb-4ac0-9801-00eff442507e")
-		(property "Reference" "#PWR03"
-			(at 163.83 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 163.83 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 163.83 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 163.83 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 163.83 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "93c2145b-8c70-4522-b492-bcedec358adf")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 191.77 90.17 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7184,6 +5884,88 @@
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
 					(reference "#PWR017")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 26.67 134.62)
+		(size 49.53 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7bf72e12-8d12-4e35-9fad-8768305749e5")
+		(property "Sheetname" "Screw_Terminals"
+			(at 26.67 133.9084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Screw_Terminals.kicad_sch"
+			(at 26.67 160.6046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "PARACAIDAS 1" input
+			(at 26.67 139.7 180)
+			(uuid "1143868a-3aec-4046-b059-7ea19dfb705a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PARACAIDAS 2" input
+			(at 26.67 152.4 180)
+			(uuid "634f664d-dc0c-4f1f-8856-e2b6392a0b8e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PARACAIDAS 3" input
+			(at 76.2 139.7 0)
+			(uuid "2a574244-48dc-4a60-bec9-a22df91a2360")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PARACAIDAS 4" input
+			(at 76.2 152.4 0)
+			(uuid "2a94a745-b1c9-4731-97be-cb726420930b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "PlacaJunio"
+				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
+					(page "2")
 				)
 			)
 		)

@@ -4991,7 +4991,7 @@
 				(hide yes)
 			)
 		)
-		(property "Enlace" "https://es.aliexpress.com/item/1005008484394895.html?spm=a2g0o.productlist.main.3.58bb6171FoFWRP&algo_pvid=b43c9639-4c9b-4ddf-b46f-9e385e116079&algo_exp_id=b43c9639-4c9b-4ddf-b46f-9e385e116079-1&pdp_ext_f=%7B\"order\"%3A\"-1\"%2C\"eval\"%3A\"1\"%7D&pdp_npi=4@dis!EUR!1.86!0.93!!!13.84!6.92!@211b80e117401386807284036e9dc9!12000045348768761!sea!ES!6208873627!X&curPageLogUid=sASK1oi6YNbW&utparam-url=scene%3Asearch%7Cquery_from%3A"
+		(property "Enlace" ""
 			(at 200.406 97.79 0)
 			(effects
 				(font

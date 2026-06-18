@@ -115,12 +115,24 @@
     "files": [
       {
         "name": "PlacaJunio.kicad_sch",
-        "open": false,
+        "open": true,
         "window": {
           "display": 0,
           "maximized": true,
           "pos_x": -9,
           "pos_y": -9,
+          "size_x": 1938,
+          "size_y": 1098
+        }
+      },
+      {
+        "name": "PlacaJunio.kicad_pro",
+        "open": false,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": -18,
+          "pos_y": -18,
           "size_x": 1938,
           "size_y": 1098
         }

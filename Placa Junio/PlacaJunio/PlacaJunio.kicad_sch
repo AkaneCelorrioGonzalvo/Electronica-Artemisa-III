@@ -1885,12 +1885,15 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RF_GPS:L80-R"
+		(symbol "LC86LICMD:LC86LICMD"
+			(pin_names
+				(offset 0.762)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -10.16 11.43 0)
+			(property "Reference" "IC"
+				(at 31.75 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1898,25 +1901,36 @@
 					(justify left)
 				)
 			)
-			(property "Value" "L80-R"
-				(at 10.16 11.43 0)
+			(property "Value" "LC86LICMD"
+				(at 31.75 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
-			(property "Footprint" "RF_GPS:Quectel_L80-R"
-				(at 0 -22.86 0)
+			(property "Footprint" "LC86LICMD"
+				(at 31.75 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.quectel.com/UploadImage/Downlad/Quectel_L80-R_Hardware_Design_V1.2.pdf"
+			(property "Datasheet" "https://cdn.sos.sk/productdata/39/c0/eb20bda6/lc86l.pdf"
+				(at 31.75 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "Quectel Wireless Solutions"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1925,51 +1939,71 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Quectel GPS Module"
-				(at 0 0 0)
+			(property "Description_1" "Quectel Wireless Solutions"
+				(at 31.75 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "quectel GPS GNSS module"
-				(at 0 0 0)
+			(property "Height" "7.05"
+				(at 31.75 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Quectel*L80*R*"
-				(at 0 0 0)
+			(property "Mouser Part Number" "277-LC86LICMD"
+				(at 31.75 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(symbol "L80-R_0_1"
-				(rectangle
-					(start -10.16 10.16)
-					(end 10.16 -10.16)
-					(stroke
-						(width 0.254)
-						(type default)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Quectel/LC86LICMD?qs=iLbezkQI%252BsiFPFQjIwBL1Q%3D%3D"
+				(at 31.75 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(fill
-						(type background)
-					)
+					(justify left)
+					(hide yes)
 				)
 			)
-			(symbol "L80-R_1_1"
+			(property "Manufacturer_Name" "Quectel"
+				(at 31.75 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "LC86LICMD"
+				(at 31.75 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(symbol "LC86LICMD_0_0"
 				(pin passive line
-					(at -12.7 2.54 0)
-					(length 2.54)
-					(name "RESERVED"
+					(at 0 0 0)
+					(length 5.08)
+					(name "FORCE_ON"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1985,9 +2019,9 @@
 					)
 				)
 				(pin passive line
-					(at -12.7 0 0)
-					(length 2.54)
-					(name "RESERVED"
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "AADET_N"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2003,9 +2037,45 @@
 					)
 				)
 				(pin passive line
-					(at -12.7 -2.54 0)
-					(length 2.54)
+					(at 0 -5.08 0)
+					(length 5.08)
 					(name "RESERVED"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "RESET_N"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 0)
+					(length 5.08)
+					(name "EX_ANT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2020,9 +2090,63 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -2.54 12.7 270)
-					(length 2.54)
+				(pin passive line
+					(at 0 -12.7 0)
+					(length 5.08)
+					(name "GND_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 35.56 0 180)
+					(length 5.08)
+					(name "1PPS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 35.56 -2.54 180)
+					(length 5.08)
+					(name "V_BCKP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 35.56 -5.08 180)
+					(length 5.08)
 					(name "VCC"
 						(effects
 							(font
@@ -2039,28 +2163,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 -12.7 90)
-					(length 2.54)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -12.7 90)
-					(length 2.54)
-					(name "GND"
+					(at 35.56 -7.62 180)
+					(length 5.08)
+					(name "GND_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2075,47 +2180,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 2.54 12.7 270)
-					(length 2.54)
-					(name "V_BCKP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 10.16 0 180)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 5.08 180)
-					(length 2.54)
-					(name "TXD1"
+				(pin passive line
+					(at 35.56 -10.16 180)
+					(length 5.08)
+					(name "TXD"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2130,10 +2198,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at 12.7 2.54 180)
-					(length 2.54)
-					(name "RXD1"
+				(pin passive line
+					(at 35.56 -12.7 180)
+					(length 5.08)
+					(name "RXD"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2148,40 +2216,18 @@
 						)
 					)
 				)
-				(pin output line
-					(at 12.7 -2.54 180)
-					(length 2.54)
-					(name "1PPS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+			)
+			(symbol "LC86LICMD_0_1"
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 30.48 2.54) (xy 30.48 -15.24) (xy 5.08 -15.24) (xy 5.08 2.54)
 					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0.1524)
+						(type solid)
 					)
-				)
-				(pin input line
-					(at 12.7 -5.08 180)
-					(length 2.54)
-					(name "~{RESET}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -3292,6 +3338,18 @@
 		(uuid "c8c05e25-6347-40f8-9abc-2ac5cce11656")
 	)
 	(junction
+		(at 82.55 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "149cb202-8937-4c96-ad4d-9017cafe56d2")
+	)
+	(junction
+		(at 88.9 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "423698ed-af51-4e68-8300-21e42a1f4ac2")
+	)
+	(junction
 		(at 64.77 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3302,12 +3360,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5e6bf013-d6c9-4592-9732-790bb7a1afc4")
-	)
-	(junction
-		(at 45.72 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5f268257-a552-4ba7-bbc7-94f4f119458e")
 	)
 	(junction
 		(at 226.06 140.97)
@@ -3322,13 +3374,19 @@
 		(uuid "8d93e464-8bb1-4502-8687-7c313852ab8b")
 	)
 	(junction
+		(at 88.9 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "972e7d61-2c21-4248-aa69-3cb6c247ef64")
+	)
+	(junction
 		(at 95.25 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b178bbad-fff9-4a67-88bd-319b71dac1f3")
 	)
 	(junction
-		(at 45.72 77.47)
+		(at 69.85 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e7a5b482-6d3a-476d-b0ef-8fc8f301f41f")
@@ -3340,20 +3398,28 @@
 		(uuid "ead2a13e-6c11-4b46-bbb6-c42f7c4a0680")
 	)
 	(no_connect
-		(at 35.56 101.6)
-		(uuid "0fde5997-6cff-4911-84c4-adff73b39210")
+		(at 30.48 97.79)
+		(uuid "0eafab1f-9c4b-46b8-9b4b-c9bc88d84bc8")
+	)
+	(no_connect
+		(at 30.48 105.41)
+		(uuid "0f235ee7-be4b-4f39-bc36-6f806f1beaf5")
 	)
 	(no_connect
 		(at 113.03 102.87)
 		(uuid "1640192d-d22f-476e-9b71-082a3f3fc9e1")
 	)
 	(no_connect
+		(at 30.48 95.25)
+		(uuid "283dedae-c4c4-4c9a-a37b-7649a4f6c380")
+	)
+	(no_connect
 		(at 113.03 77.47)
 		(uuid "2bfd5988-b243-4b29-8225-b0b615bdeaa6")
 	)
 	(no_connect
-		(at 60.96 104.14)
-		(uuid "53960450-c689-476d-b19c-4f9113ea9c4f")
+		(at 30.48 102.87)
+		(uuid "36a1b284-c2de-4ab2-abac-f54cde10fb45")
 	)
 	(no_connect
 		(at 113.03 100.33)
@@ -3364,16 +3430,16 @@
 		(uuid "764c30bd-2495-4d04-abe1-3c11e83a346c")
 	)
 	(no_connect
-		(at 60.96 106.68)
-		(uuid "9236d80c-57ac-4a16-82ef-d5d449cdb44e")
+		(at 66.04 95.25)
+		(uuid "92c0e0e1-4f21-4562-8504-c21b1b333d19")
 	)
 	(no_connect
-		(at 35.56 99.06)
-		(uuid "991c3680-e510-4a4a-a122-fb694a155faa")
+		(at 66.04 97.79)
+		(uuid "ddc80d1e-0a5b-4d74-996c-321c3f7284c4")
 	)
 	(no_connect
-		(at 35.56 104.14)
-		(uuid "bcbeb7e7-7517-4b15-ad43-c3a2d601d316")
+		(at 30.48 100.33)
+		(uuid "e59d22dd-fa08-4f21-946b-8caa295a3917")
 	)
 	(no_connect
 		(at 113.03 107.95)
@@ -3388,16 +3454,6 @@
 			(type default)
 		)
 		(uuid "09ee5e0f-eb43-4aaa-8595-d99f66dcb897")
-	)
-	(wire
-		(pts
-			(xy 50.8 88.9) (xy 50.8 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a595b7f-0c0d-4bf1-adc6-86222cacd235")
 	)
 	(wire
 		(pts
@@ -3441,6 +3497,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 102.87) (xy 88.9 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "169251ce-d74f-446d-87f7-261bfd3ac443")
+	)
+	(wire
+		(pts
 			(xy 102.87 105.41) (xy 102.87 116.84)
 		)
 		(stroke
@@ -3471,13 +3537,23 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 77.47) (xy 58.42 77.47)
+			(xy 69.85 91.44) (xy 82.55 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2b841888-b982-466d-b621-017f82a881fa")
+	)
+	(wire
+		(pts
+			(xy 66.04 100.33) (xy 69.85 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d70434a-ceeb-4554-807d-464994d242ac")
 	)
 	(wire
 		(pts
@@ -3488,6 +3564,16 @@
 			(type default)
 		)
 		(uuid "397b93eb-2b77-4255-a1e6-fdf6c1e67939")
+	)
+	(wire
+		(pts
+			(xy 88.9 99.06) (xy 88.9 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a8e425b-2d6f-46f7-948a-08fe4eeb2bc4")
 	)
 	(wire
 		(pts
@@ -3551,7 +3637,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 77.47) (xy 45.72 86.36)
+			(xy 69.85 91.44) (xy 69.85 100.33)
 		)
 		(stroke
 			(width 0)
@@ -3561,7 +3647,17 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 96.52) (xy 69.85 96.52)
+			(xy 82.55 91.44) (xy 93.98 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f21542c-6a3e-4455-8e61-4ba54d95429e")
+	)
+	(wire
+		(pts
+			(xy 66.04 105.41) (xy 74.93 105.41)
 		)
 		(stroke
 			(width 0)
@@ -3571,7 +3667,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 74.93) (xy 45.72 77.47)
+			(xy 69.85 88.9) (xy 69.85 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3581,7 +3677,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 99.06) (xy 69.85 99.06)
+			(xy 66.04 107.95) (xy 74.93 107.95)
 		)
 		(stroke
 			(width 0)
@@ -3598,16 +3694,6 @@
 			(type default)
 		)
 		(uuid "a2e395f6-1504-458b-a249-f7610b928ed0")
-	)
-	(wire
-		(pts
-			(xy 58.42 85.09) (xy 58.42 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9d49cd9-2379-4ca8-9be3-735086a10c63")
 	)
 	(wire
 		(pts
@@ -3641,16 +3727,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 86.36) (xy 45.72 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b62dfc0f-d29d-4bbe-887e-4ffddffcf01e")
-	)
-	(wire
-		(pts
 			(xy 73.66 34.29) (xy 73.66 35.56)
 		)
 		(stroke
@@ -3658,16 +3734,6 @@
 			(type default)
 		)
 		(uuid "b8b918c0-9bf0-4823-a44b-472e68a78fe0")
-	)
-	(wire
-		(pts
-			(xy 48.26 114.3) (xy 48.26 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba46c41e-c728-4834-96e8-40decbef217e")
 	)
 	(wire
 		(pts
@@ -3711,6 +3777,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 99.06) (xy 93.98 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d275fd1a-44aa-4a47-8091-6597f5330d98")
+	)
+	(wire
+		(pts
 			(xy 73.66 44.45) (xy 83.82 44.45)
 		)
 		(stroke
@@ -3728,6 +3804,16 @@
 			(type default)
 		)
 		(uuid "d812f6e6-36f3-448f-ba36-1dfbad8e997f")
+	)
+	(wire
+		(pts
+			(xy 30.48 107.95) (xy 30.48 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d95df1aa-1d46-429a-ace2-546ea09dfcc7")
 	)
 	(wire
 		(pts
@@ -3751,13 +3837,13 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 86.36) (xy 50.8 86.36)
+			(xy 66.04 102.87) (xy 88.9 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f994676f-0e48-4f60-99ce-216130bd86d6")
+		(uuid "e186625e-35dc-4c5f-9155-d60cc7707641")
 	)
 	(wire
 		(pts
@@ -3768,6 +3854,16 @@
 			(type default)
 		)
 		(uuid "fda8c88f-c0bb-4b80-82f0-e68d1977c3dd")
+	)
+	(wire
+		(pts
+			(xy 82.55 99.06) (xy 88.9 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff4b55da-bbb4-4637-95be-07ec3b3947e5")
 	)
 	(label "Buzzer"
 		(at 214.63 140.97 0)
@@ -3820,7 +3916,7 @@
 		(uuid "62def831-2d37-4672-973d-7c6152bce398")
 	)
 	(label "TX_GPS"
-		(at 69.85 96.52 0)
+		(at 74.93 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3840,7 +3936,7 @@
 		(uuid "79a28f19-d3f0-4acd-be6e-80c2657f4e25")
 	)
 	(label "RX_GPS"
-		(at 69.85 99.06 0)
+		(at 74.93 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3931,7 +4027,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 48.26 123.19 0)
+		(at 88.9 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3939,7 +4035,7 @@
 		(dnp no)
 		(uuid "13074b44-2e74-4f34-a7e9-87e509a32cfc")
 		(property "Reference" "#PWR020"
-			(at 48.26 129.54 0)
+			(at 88.9 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3948,7 +4044,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 48.26 127 0)
+			(at 88.9 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3956,7 +4052,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 123.19 0)
+			(at 88.9 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3965,7 +4061,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 123.19 0)
+			(at 88.9 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3974,7 +4070,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 48.26 123.19 0)
+			(at 88.9 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4129,7 +4225,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_US")
-		(at 58.42 81.28 0)
+		(at 82.55 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4137,7 +4233,7 @@
 		(dnp no)
 		(uuid "36a21f0f-8714-45d0-8b9d-ba436e2c63b5")
 		(property "Reference" "C6"
-			(at 62.992 80.01 0)
+			(at 87.122 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4146,7 +4242,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 62.992 83.82 0)
+			(at 87.122 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4155,7 +4251,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 58.42 81.28 0)
+			(at 82.55 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4164,7 +4260,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 58.42 81.28 0)
+			(at 82.55 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4173,7 +4269,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 58.42 81.28 0)
+			(at 82.55 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4348,6 +4444,234 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Polarized_US")
+		(at 93.98 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4e145d47-06b6-41e9-bb39-d6ee78fa0d35")
+		(property "Reference" "C7"
+			(at 98.552 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 98.552 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 93.98 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 93.98 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6698e2e6-d84f-43c9-b6f2-16e805dd7837")
+		)
+		(pin "2"
+			(uuid "9c1fa836-328f-4108-9aaf-9b77bd3ec9ea")
+		)
+		(instances
+			(project "PlacaJunio"
+				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LC86LICMD:LC86LICMD")
+		(at 30.48 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5648cef6-cf4f-43b0-93eb-33800ca2594f")
+		(property "Reference" "IC1"
+			(at 48.26 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LC86LICMD"
+			(at 48.26 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LC86LICMD"
+			(at 62.23 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.sos.sk/productdata/39/c0/eb20bda6/lc86l.pdf"
+			(at 62.23 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quectel Wireless Solutions"
+			(at 30.48 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "Quectel Wireless Solutions"
+			(at 62.23 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Height" "7.05"
+			(at 62.23 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "277-LC86LICMD"
+			(at 62.23 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Quectel/LC86LICMD?qs=iLbezkQI%252BsiFPFQjIwBL1Q%3D%3D"
+			(at 62.23 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Quectel"
+			(at 62.23 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LC86LICMD"
+			(at 62.23 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "12"
+			(uuid "19e95a5c-7f38-4be9-b8e4-c05f8edffc0f")
+		)
+		(pin "4"
+			(uuid "7a788cc8-f274-409a-bdda-9d9dca843bf3")
+		)
+		(pin "1"
+			(uuid "878bbd1e-8229-4bd1-8b04-629bd9ae73d4")
+		)
+		(pin "8"
+			(uuid "c1b9eb9d-fe1c-4c2e-a776-c84bd51aa565")
+		)
+		(pin "10"
+			(uuid "daf6a846-02d2-41e5-b14a-cd8cba2260ec")
+		)
+		(pin "6"
+			(uuid "38b1d909-8e82-4372-aed5-4b47143b9202")
+		)
+		(pin "5"
+			(uuid "72d65951-6b52-4573-a9b5-3d89c4e84189")
+		)
+		(pin "3"
+			(uuid "62e31c16-9afe-45c7-9254-53d66b595b49")
+		)
+		(pin "2"
+			(uuid "ffc47042-ba42-47cc-b69a-b9f2200632fd")
+		)
+		(pin "11"
+			(uuid "b35ab962-6f4b-4b62-ab5b-7acc7952342a")
+		)
+		(pin "7"
+			(uuid "a3b63865-4b7e-4b9c-8af3-d51e9291a537")
+		)
+		(pin "9"
+			(uuid "a1823c5a-9675-464a-88c0-2299438753b6")
+		)
+		(instances
+			(project ""
+				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
+					(reference "IC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:IRLML0030")
 		(at 233.68 140.97 0)
 		(unit 1)
@@ -4422,35 +4746,16 @@
 		)
 	)
 	(symbol
-		(lib_id "RF_GPS:L80-R")
-		(at 48.26 101.6 0)
+		(lib_id "power:GND")
+		(at 30.48 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "61fb2243-ad62-4ba5-927e-c13c3b32030c")
-		(property "Reference" "U1"
-			(at 50.4033 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "L80-R"
-			(at 50.4033 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "RF_GPS:Quectel_L80-R"
-			(at 48.26 124.46 0)
+		(uuid "748c851e-6700-474a-92a1-2bbcc2303db7")
+		(property "Reference" "#PWR026"
+			(at 30.48 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4458,8 +4763,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.quectel.com/UploadImage/Downlad/Quectel_L80-R_Hardware_Design_V1.2.pdf"
-			(at 48.26 101.6 0)
+		(property "Value" "GND"
+			(at 30.48 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4467,55 +4780,30 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Quectel GPS Module"
-			(at 48.26 101.6 0)
+		(property "Datasheet" ""
+			(at 30.48 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 30.48 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
-			(uuid "22cee8e4-44c6-4991-9c57-d0784276c635")
-		)
-		(pin "8"
-			(uuid "609afab0-6144-4101-9291-d0171a68de28")
-		)
-		(pin "7"
-			(uuid "e062014a-65b7-4beb-8d39-b14604c1ec78")
-		)
-		(pin "11"
-			(uuid "898e8748-3490-4fda-896b-4a9a9b9a19b6")
-		)
-		(pin "5"
-			(uuid "93780ae9-9c8d-470c-8f1f-e7fb817dcb95")
-		)
-		(pin "3"
-			(uuid "fc0cfa6e-f926-445d-8149-c42d522d2bb5")
-		)
-		(pin "6"
-			(uuid "fd25baad-8384-4b05-ab80-0face03cc03b")
-		)
-		(pin "2"
-			(uuid "a796cd02-f3b0-4ead-8ec1-237b9af8e3b3")
-		)
-		(pin "10"
-			(uuid "d5d27d5c-db89-4024-a73a-b0a1683b1bbd")
-		)
-		(pin "4"
-			(uuid "8e61f07a-46f2-49d2-b8b2-c161a603b6a9")
-		)
-		(pin "12"
-			(uuid "5bcbfb18-90da-46d0-90da-d28f81edae57")
-		)
-		(pin "9"
-			(uuid "112ac566-1472-47e0-9cc0-6fafac56bd3f")
+			(uuid "0862edec-538b-4ce4-aa09-fc701a763af5")
 		)
 		(instances
-			(project ""
+			(project "PlacaJunio"
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
-					(reference "U1")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -4988,70 +5276,6 @@
 			(project "PlacaJunio"
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 58.42 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b0193697-2770-4ae5-83ad-77308f17c963")
-		(property "Reference" "#PWR022"
-			(at 58.42 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 58.42 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 58.42 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "91d1e523-3dba-44ef-baff-278600da70ba")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
-					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -5693,7 +5917,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 45.72 74.93 0)
+		(at 69.85 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5702,7 +5926,7 @@
 		(fields_autoplaced yes)
 		(uuid "e2fac090-884f-4b07-b283-2ba16170b59b")
 		(property "Reference" "#PWR09"
-			(at 45.72 78.74 0)
+			(at 69.85 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5711,7 +5935,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 45.72 69.85 0)
+			(at 69.85 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5719,7 +5943,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 74.93 0)
+			(at 69.85 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5728,7 +5952,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 74.93 0)
+			(at 69.85 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5737,7 +5961,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 45.72 74.93 0)
+			(at 69.85 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)

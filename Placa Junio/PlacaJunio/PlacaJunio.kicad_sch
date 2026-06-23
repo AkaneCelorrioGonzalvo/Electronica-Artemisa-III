@@ -1294,7 +1294,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x02"
+		(symbol "Connector:Screw_Terminal_01x02"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1310,7 +1310,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x02"
+			(property "Value" "Screw_Terminal_01x02"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -1336,7 +1336,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1345,7 +1345,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "connector"
+			(property "ki_keywords" "screw terminal"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1354,7 +1354,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "TerminalBlock*:*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1363,7 +1363,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x02_1_1"
+			(symbol "Screw_Terminal_01x02_1_1"
 				(rectangle
 					(start -1.27 1.27)
 					(end 1.27 -3.81)
@@ -1375,9 +1375,10 @@
 						(type background)
 					)
 				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
+				(polyline
+					(pts
+						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
+					)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -1386,9 +1387,56 @@
 						(type none)
 					)
 				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
+				(polyline
+					(pts
+						(xy -0.5334 -2.2098) (xy 0.3302 -3.048)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 0.508) (xy 0.508 -0.3302)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 -2.032) (xy 0.508 -2.8702)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.635)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -3069,8 +3117,8 @@
 		(uuid 6d1cbbea-9090-4fbd-aef1-f47a24c3ca0a)
 	)
 	(rectangle
-		(start 45.72 31.75)
-		(end 77.47 57.15)
+		(start 58.42 31.75)
+		(end 90.17 57.15)
 		(stroke
 			(width 0)
 			(type default)
@@ -3139,7 +3187,7 @@
 	)
 	(text "Regulador Tensión\n"
 		(exclude_from_sim no)
-		(at 45.72 31.75 0)
+		(at 58.42 31.75 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3204,10 +3252,10 @@
 		(uuid "0fd78cae-cdcd-415b-ba73-12c833bbb7ca")
 	)
 	(junction
-		(at 41.91 40.64)
+		(at 54.61 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "54f113c5-95c2-4299-8d14-18a743e9064a")
+		(uuid "5b5f953d-709a-4a21-be67-fc95a3fc1ea5")
 	)
 	(junction
 		(at 62.23 104.14)
@@ -3216,7 +3264,7 @@
 		(uuid "5e6bf013-d6c9-4592-9732-790bb7a1afc4")
 	)
 	(junction
-		(at 49.53 40.64)
+		(at 62.23 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "64a521af-63ab-4804-9c27-6aac7d51398a")
@@ -3228,7 +3276,7 @@
 		(uuid "7e0f31ea-42d1-405a-8ed6-23924f5d8f70")
 	)
 	(junction
-		(at 60.96 50.8)
+		(at 73.66 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8d93e464-8bb1-4502-8687-7c313852ab8b")
@@ -3240,7 +3288,7 @@
 		(uuid "adc8e146-90e9-4de9-9c31-227dd856ae30")
 	)
 	(junction
-		(at 72.39 40.64)
+		(at 85.09 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b178bbad-fff9-4a67-88bd-319b71dac1f3")
@@ -3517,7 +3565,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 40.64) (xy 72.39 40.64)
+			(xy 83.82 40.64) (xy 85.09 40.64)
 		)
 		(stroke
 			(width 0)
@@ -3557,13 +3605,23 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 40.64) (xy 50.8 40.64)
+			(xy 62.23 40.64) (xy 63.5 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "548aadf7-c1cc-46ee-a4a1-1cc53be2e4ee")
+	)
+	(wire
+		(pts
+			(xy 43.18 40.64) (xy 45.72 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54b7146e-c768-446d-be6a-ab961d602095")
 	)
 	(wire
 		(pts
@@ -3587,7 +3645,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 49.53) (xy 72.39 50.8)
+			(xy 85.09 49.53) (xy 85.09 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3737,7 +3795,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 50.8) (xy 72.39 50.8)
+			(xy 73.66 50.8) (xy 85.09 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3747,7 +3805,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 40.64) (xy 49.53 40.64)
+			(xy 54.61 40.64) (xy 62.23 40.64)
 		)
 		(stroke
 			(width 0)
@@ -3767,6 +3825,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 40.64) (xy 54.61 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0ef1e0a-14f1-45d5-8667-37e1833513b8")
+	)
+	(wire
+		(pts
 			(xy 168.91 101.6) (xy 153.67 101.6)
 		)
 		(stroke
@@ -3777,7 +3845,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 40.64) (xy 49.53 41.91)
+			(xy 62.23 40.64) (xy 62.23 41.91)
 		)
 		(stroke
 			(width 0)
@@ -3797,7 +3865,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 41.91) (xy 72.39 40.64)
+			(xy 85.09 41.91) (xy 85.09 40.64)
 		)
 		(stroke
 			(width 0)
@@ -3847,7 +3915,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 50.8) (xy 60.96 50.8)
+			(xy 62.23 50.8) (xy 73.66 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3857,7 +3925,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 48.26) (xy 60.96 50.8)
+			(xy 73.66 48.26) (xy 73.66 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3867,7 +3935,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 49.53) (xy 49.53 50.8)
+			(xy 62.23 49.53) (xy 62.23 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3877,7 +3945,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 40.64) (xy 80.01 40.64)
+			(xy 85.09 40.64) (xy 92.71 40.64)
 		)
 		(stroke
 			(width 0)
@@ -4343,7 +4411,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Buzzer_Beeper:Buzzer_TDK_PS1240P02BT_D12.2mm_H6.5mm"
+		(property "Footprint" "Buzzer_Beeper:MagneticBuzzer_CUI_CMT-8504-100-SMT"
 			(at 64.135 83.82 90)
 			(effects
 				(font
@@ -4451,7 +4519,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_US")
-		(at 49.53 45.72 0)
+		(at 62.23 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4459,7 +4527,7 @@
 		(dnp no)
 		(uuid "22712bb5-0f3c-4187-a6b6-ef0f8d5482fa")
 		(property "Reference" "C2"
-			(at 50.8 49.53 0)
+			(at 63.5 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4468,7 +4536,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 46.99 53.34 0)
+			(at 59.69 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4477,7 +4545,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 49.53 45.72 0)
+			(at 62.23 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4486,7 +4554,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 49.53 45.72 0)
+			(at 62.23 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4495,7 +4563,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 49.53 45.72 0)
+			(at 62.23 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4519,7 +4587,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 80.01 40.64 0)
+		(at 92.71 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4528,7 +4596,7 @@
 		(fields_autoplaced yes)
 		(uuid "2e31e43d-8176-4ee0-b35a-8e8c25db8cd4")
 		(property "Reference" "#PWR08"
-			(at 80.01 44.45 0)
+			(at 92.71 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4537,7 +4605,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 80.01 35.56 0)
+			(at 92.71 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4545,7 +4613,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 40.64 0)
+			(at 92.71 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4554,7 +4622,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 40.64 0)
+			(at 92.71 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4563,7 +4631,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 80.01 40.64 0)
+			(at 92.71 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4653,7 +4721,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 60.96 50.8 0)
+		(at 73.66 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4661,7 +4729,7 @@
 		(dnp no)
 		(uuid "4b7c2ae1-b410-42df-bf8b-59ea8c1bc175")
 		(property "Reference" "#PWR019"
-			(at 60.96 57.15 0)
+			(at 73.66 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4670,7 +4738,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 60.96 54.61 0)
+			(at 73.66 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4678,7 +4746,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 50.8 0)
+			(at 73.66 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4687,7 +4755,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 50.8 0)
+			(at 73.66 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4696,7 +4764,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 60.96 50.8 0)
+			(at 73.66 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5149,7 +5217,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 41.91 40.64 0)
+		(at 54.61 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5158,7 +5226,7 @@
 		(fields_autoplaced yes)
 		(uuid "7ca573c6-055b-444a-abc5-707de2acc2df")
 		(property "Reference" "#PWR018"
-			(at 41.91 44.45 0)
+			(at 54.61 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5167,7 +5235,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 41.91 35.56 0)
+			(at 54.61 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5175,7 +5243,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 41.91 40.64 0)
+			(at 54.61 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5184,7 +5252,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 41.91 40.64 0)
+			(at 54.61 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5193,7 +5261,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 41.91 40.64 0)
+			(at 54.61 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5348,7 +5416,7 @@
 	)
 	(symbol
 		(lib_id "Regulator_Switching:TSR2-2433N")
-		(at 60.96 43.18 0)
+		(at 73.66 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5357,7 +5425,7 @@
 		(fields_autoplaced yes)
 		(uuid "88c3e0c1-c2ca-4f39-803e-d05543ac890e")
 		(property "Reference" "U5"
-			(at 60.96 33.02 0)
+			(at 73.66 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5365,7 +5433,7 @@
 			)
 		)
 		(property "Value" "TSR2-2433N"
-			(at 60.96 35.56 0)
+			(at 73.66 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5373,7 +5441,7 @@
 			)
 		)
 		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TSR2-24xxN_TSR2-24xxxN_THT"
-			(at 60.96 49.276 0)
+			(at 73.66 49.276 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5383,7 +5451,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tracopower.com/products/tsr2n.pdf"
-			(at 60.96 46.99 0)
+			(at 73.66 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5392,7 +5460,7 @@
 			)
 		)
 		(property "Description" "2A step-down regulator, fixed 3.3V output voltage, 4.6-36V input voltage, TO-220 compatible LM78xx replacement"
-			(at 60.96 43.18 0)
+			(at 73.66 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5637,6 +5705,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 38.1 43.18 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a646c916-da24-4725-91e7-7487d0fc6807")
+		(property "Reference" "J5"
+			(at 35.56 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Terminal P3"
+			(at 36.068 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
+			(at 38.1 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 38.1 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Enlace" "https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/282837-2/2187973"
+			(at 38.1 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ff66a91-35e6-48c6-a363-96d9dbce325b")
+		)
+		(pin "2"
+			(uuid "623b1e84-783d-4b7d-83a8-2427b4cae45c")
+		)
+		(instances
+			(project "PlacaJunio"
+				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 62.23 83.82 90)
 		(unit 1)
@@ -5836,7 +5981,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_US")
-		(at 72.39 45.72 0)
+		(at 85.09 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5844,7 +5989,7 @@
 		(dnp no)
 		(uuid "dba9cad1-a6f4-47a5-b18d-80e0ca155468")
 		(property "Reference" "C5"
-			(at 68.58 49.53 0)
+			(at 81.28 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5853,7 +5998,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 68.58 53.34 0)
+			(at 81.28 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5862,7 +6007,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 72.39 45.72 0)
+			(at 85.09 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5871,7 +6016,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 72.39 45.72 0)
+			(at 85.09 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5880,7 +6025,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 72.39 45.72 0)
+			(at 85.09 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5897,72 +6042,6 @@
 			(project "PlacaJunio"
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
 					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 36.83 43.18 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dc4f1468-3bcb-4874-857f-94c737eef8b7")
-		(property "Reference" "J1"
-			(at 31.242 40.894 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Bateria"
-			(at 31.496 43.434 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
-			(at 36.83 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 36.83 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 36.83 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4199a885-4158-45cc-8841-cd2845727e02")
-		)
-		(pin "2"
-			(uuid "6cc6a2b8-a46b-4298-9d29-8a42569ca7a3")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
-					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -6054,7 +6133,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 41.91 43.18 0)
+		(at 43.18 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6062,7 +6141,7 @@
 		(dnp no)
 		(uuid "e170736f-8893-4e55-9eec-8ad1954673be")
 		(property "Reference" "#PWR021"
-			(at 41.91 49.53 0)
+			(at 43.18 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6071,7 +6150,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 41.91 46.99 0)
+			(at 43.18 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6079,7 +6158,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 41.91 43.18 0)
+			(at 43.18 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6088,7 +6167,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 41.91 43.18 0)
+			(at 43.18 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6097,7 +6176,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 41.91 43.18 0)
+			(at 43.18 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6240,6 +6319,83 @@
 			(project "PlacaJunio"
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 45.72 35.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fa82658d-d7fb-4365-a71d-fab4fe26a0f4")
+		(property "Reference" "J6"
+			(at 45.72 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Terminal P4"
+			(at 48.26 33.528 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
+			(at 45.72 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 45.72 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Enlace" "https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/282837-2/2187973"
+			(at 45.72 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "faa5d9a5-ffe8-466d-adec-8ad1811a28fb")
+		)
+		(pin "2"
+			(uuid "1e0809d4-7392-4e0d-a477-244fb8706c7d")
+		)
+		(instances
+			(project "PlacaJunio"
+				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
+					(reference "J6")
 					(unit 1)
 				)
 			)

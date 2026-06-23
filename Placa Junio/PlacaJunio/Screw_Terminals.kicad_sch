@@ -846,7 +846,7 @@
 	)
 	(rectangle
 		(start 55.88 69.85)
-		(end 241.3 120.65)
+		(end 163.83 120.65)
 		(stroke
 			(width 0)
 			(type default)
@@ -855,6 +855,16 @@
 			(type none)
 		)
 		(uuid 8c8e2145-c824-4a10-9067-2373a99c708e)
+	)
+	(text "Solo para 2 paracaídas\nSi se quieren más cargas de pólvora habrá que hacer una placa extra\n"
+		(exclude_from_sim no)
+		(at 209.296 96.266 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2bc729ae-4354-4b15-b059-602e70051619")
 	)
 	(text "Activador de paracaídas"
 		(exclude_from_sim no)
@@ -874,40 +884,10 @@
 		(uuid "32d29ef2-886a-4cf5-95bf-65796bd321c0")
 	)
 	(junction
-		(at 179.07 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3b77528c-1a20-4c52-8bbc-3f31ffe43b8a")
-	)
-	(junction
-		(at 208.28 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6841dad5-0e79-4b9b-a2b1-5ac42338ed7d")
-	)
-	(junction
 		(at 140.97 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "72072f41-c453-4e16-97ac-9a3b6fe0adfb")
-	)
-	(junction
-		(at 218.44 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "748fcc09-4808-4ca3-b356-c427e962e057")
-	)
-	(junction
-		(at 179.07 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "96378cb1-29c6-478a-af6d-12544f29562a")
-	)
-	(junction
-		(at 168.91 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9afcd694-28df-480e-9292-fd1737632a9c")
 	)
 	(junction
 		(at 100.33 82.55)
@@ -932,32 +912,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f992c222-0f79-4ad6-bd5e-84cf29bb34b3")
-	)
-	(junction
-		(at 218.44 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fd1d3722-4fe6-4e2f-a911-2f286725eb2e")
-	)
-	(wire
-		(pts
-			(xy 195.58 106.68) (xy 179.07 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00cd062a-c5b5-4dcd-84ca-5355a06d1bc4")
-	)
-	(wire
-		(pts
-			(xy 168.91 106.68) (xy 179.07 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "014533ca-8f03-4631-8a7b-2ccc80bf2309")
 	)
 	(wire
 		(pts
@@ -991,16 +945,6 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 106.68) (xy 218.44 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f9eafc7-3b7d-4e7a-be7a-a3ead335901a")
-	)
-	(wire
-		(pts
 			(xy 91.44 82.55) (xy 100.33 82.55)
 		)
 		(stroke
@@ -1021,26 +965,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 106.68) (xy 179.07 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e8abc8b-dc66-41f8-89a1-54e7fc1f279f")
-	)
-	(wire
-		(pts
-			(xy 148.59 118.11) (xy 163.83 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ffbf999-14de-46c5-a374-af576093156e")
-	)
-	(wire
-		(pts
 			(xy 100.33 106.68) (xy 100.33 104.14)
 		)
 		(stroke
@@ -1051,16 +975,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 106.68) (xy 218.44 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a949975-472d-42e9-9e1d-62edecf4bbe7")
-	)
-	(wire
-		(pts
 			(xy 130.81 99.06) (xy 133.35 99.06)
 		)
 		(stroke
@@ -1068,16 +982,6 @@
 			(type default)
 		)
 		(uuid "2d3f68a4-24db-4a3c-aa40-49dc7aab6efe")
-	)
-	(wire
-		(pts
-			(xy 203.2 99.06) (xy 208.28 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37fb855c-c7d4-476a-b643-f62ac50d11eb")
 	)
 	(wire
 		(pts
@@ -1101,16 +1005,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 82.55) (xy 179.07 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c81436d-c56f-4a59-901d-af3c1a6e849a")
-	)
-	(wire
-		(pts
 			(xy 156.21 82.55) (xy 140.97 82.55)
 		)
 		(stroke
@@ -1118,16 +1012,6 @@
 			(type default)
 		)
 		(uuid "4473f48c-9a3b-4297-b898-4d8fa6a7fe83")
-	)
-	(wire
-		(pts
-			(xy 179.07 82.55) (xy 179.07 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49f31806-e48d-4a57-89c5-2165479060f0")
 	)
 	(wire
 		(pts
@@ -1171,66 +1055,6 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 82.55) (xy 195.58 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b32347f-2571-4b96-b31a-92e697121667")
-	)
-	(wire
-		(pts
-			(xy 179.07 82.55) (xy 195.58 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62b4ea39-3525-4b48-9642-e79897c86ee6")
-	)
-	(wire
-		(pts
-			(xy 233.68 102.87) (xy 233.68 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6444d3bb-9cc5-4b38-9d5f-dd6f78dafe77")
-	)
-	(wire
-		(pts
-			(xy 195.58 104.14) (xy 195.58 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64ecaf51-3816-47dc-abc1-56a16a0a4c8a")
-	)
-	(wire
-		(pts
-			(xy 208.28 99.06) (xy 210.82 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69a1085e-8616-4c75-ae25-406f22fc5f0e")
-	)
-	(wire
-		(pts
-			(xy 218.44 106.68) (xy 218.44 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c350823-6f78-4dd2-9a57-85be09fab720")
-	)
-	(wire
-		(pts
 			(xy 113.03 118.11) (xy 127 118.11)
 		)
 		(stroke
@@ -1251,16 +1075,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 73.66) (xy 218.44 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "759f8298-285a-4204-85d0-3fbbb876a75a")
-	)
-	(wire
-		(pts
 			(xy 100.33 91.44) (xy 100.33 93.98)
 		)
 		(stroke
@@ -1268,16 +1082,6 @@
 			(type default)
 		)
 		(uuid "77447ded-228a-404e-b5ba-38e8873f3449")
-	)
-	(wire
-		(pts
-			(xy 179.07 80.01) (xy 179.07 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8364071b-5cf4-4bc7-98e4-2e8246a0a2d9")
 	)
 	(wire
 		(pts
@@ -1321,16 +1125,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 118.11) (xy 163.83 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9cb06766-1da4-44ca-acf4-418d8a20e6af")
-	)
-	(wire
-		(pts
 			(xy 90.17 99.06) (xy 92.71 99.06)
 		)
 		(stroke
@@ -1338,16 +1132,6 @@
 			(type default)
 		)
 		(uuid "a0ee2bd8-d9d0-4672-ba35-f95f6b6af706")
-	)
-	(wire
-		(pts
-			(xy 163.83 99.06) (xy 168.91 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a293d128-d8b6-4ff4-8b31-13c960f92263")
 	)
 	(wire
 		(pts
@@ -1361,36 +1145,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 77.47) (xy 179.07 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a449d25a-618c-41b4-83bb-7df4b1e25501")
-	)
-	(wire
-		(pts
-			(xy 233.68 82.55) (xy 218.44 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a78c0c3f-1991-44f5-9bd9-6bdb2872168a")
-	)
-	(wire
-		(pts
-			(xy 166.37 73.66) (xy 179.07 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ada5be04-af91-4c6d-a33c-13b930c151ed")
-	)
-	(wire
-		(pts
 			(xy 90.17 106.68) (xy 100.33 106.68)
 		)
 		(stroke
@@ -1398,36 +1152,6 @@
 			(type default)
 		)
 		(uuid "b0190477-6c6a-4453-82b0-5092ef94badf")
-	)
-	(wire
-		(pts
-			(xy 218.44 82.55) (xy 218.44 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b90a61a5-0eee-40bf-a93f-07a52722eb12")
-	)
-	(wire
-		(pts
-			(xy 218.44 91.44) (xy 218.44 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd7e9406-52bf-4f12-9a78-ac644e8e9fec")
-	)
-	(wire
-		(pts
-			(xy 218.44 77.47) (xy 218.44 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be916059-c794-4900-b252-84f6602f8dc3")
 	)
 	(wire
 		(pts
@@ -1461,36 +1185,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 95.25) (xy 233.68 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d94df795-e9ad-455a-897e-da34d48990c6")
-	)
-	(wire
-		(pts
-			(xy 203.2 118.11) (xy 203.2 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da6d8c1b-8516-42d7-8c0e-73f078df6a73")
-	)
-	(wire
-		(pts
-			(xy 168.91 99.06) (xy 171.45 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df0079a6-dc21-4bb6-9767-66c7c2b22ffd")
-	)
-	(wire
-		(pts
 			(xy 100.33 77.47) (xy 100.33 73.66)
 		)
 		(stroke
@@ -1508,16 +1202,6 @@
 			(type default)
 		)
 		(uuid "e5d29a27-21f6-487e-8ff6-4ea29f6453ec")
-	)
-	(wire
-		(pts
-			(xy 218.44 80.01) (xy 218.44 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eab110ab-9caa-4534-b2c2-eb136f594242")
 	)
 	(wire
 		(pts
@@ -1549,46 +1233,6 @@
 		)
 		(uuid "f362f115-0448-4936-b17c-a8674e82490f")
 	)
-	(wire
-		(pts
-			(xy 212.09 82.55) (xy 218.44 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7de66b0-d132-4244-8eb8-85fce5777b08")
-	)
-	(wire
-		(pts
-			(xy 179.07 91.44) (xy 179.07 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8932efc-8598-4263-ba87-72fa00af9587")
-	)
-	(wire
-		(pts
-			(xy 187.96 118.11) (xy 203.2 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "faed354f-9a88-4240-9c96-9c5f1976007e")
-	)
-	(label "PARACAIDAS 4"
-		(at 187.96 118.11 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "56be3c8a-3ba3-4092-b2b8-647051185484")
-	)
 	(label "PARACAIDAS 1"
 		(at 72.39 118.11 0)
 		(effects
@@ -1598,16 +1242,6 @@
 			(justify left bottom)
 		)
 		(uuid "58eb8de9-b28f-4c9c-8cd1-f6c2a65f8917")
-	)
-	(label "PARACAIDAS 3"
-		(at 148.59 118.11 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "babdc37e-32f3-4b1e-8ed3-c010c2d88a5d")
 	)
 	(label "PARACAIDAS 2"
 		(at 113.03 118.11 0)
@@ -1630,17 +1264,6 @@
 		)
 		(uuid "1023b76d-ee5b-492d-8344-b93c9fd347ec")
 	)
-	(hierarchical_label "PARACAIDAS 3"
-		(shape input)
-		(at 148.59 118.11 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "38687e78-7445-4cc7-a4b0-aede426dd646")
-	)
 	(hierarchical_label "SENSE1"
 		(shape output)
 		(at 91.44 82.55 180)
@@ -1651,17 +1274,6 @@
 			(justify right)
 		)
 		(uuid "59508f03-c7ce-46f9-859c-6d9bd5931b3e")
-	)
-	(hierarchical_label "SENSE3"
-		(shape output)
-		(at 173.99 82.55 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "60064131-f016-42eb-a582-24c3f0d540ce")
 	)
 	(hierarchical_label "PARACAIDAS 2"
 		(shape input)
@@ -1684,171 +1296,6 @@
 			(justify right)
 		)
 		(uuid "cac28515-0757-4f68-882e-2a631a93a2cb")
-	)
-	(hierarchical_label "PARACAIDAS 4"
-		(shape input)
-		(at 187.96 118.11 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e44791dc-f06a-487f-8347-507d13e6d2b0")
-	)
-	(hierarchical_label "SENSE4"
-		(shape output)
-		(at 212.09 82.55 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e97e28d4-d39c-47c2-81cc-d37ce331cebf")
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 168.91 102.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "11ae19d8-97ca-4bb3-8b2f-e88a1bbb2ac6")
-		(property "Reference" "R10"
-			(at 171.45 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 171.45 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 167.132 102.87 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 168.91 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 168.91 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0aa17bd2-abd0-4127-8543-4894d6780d64")
-		)
-		(pin "2"
-			(uuid "3d4f6250-6008-4fde-8c5c-fe03324cfcce")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/7bf72e12-8d12-4e35-9fad-8768305749e5"
-					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:IRLML0030")
-		(at 176.53 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "133c03d6-ba16-4563-b63b-77e664d196cc")
-		(property "Reference" "Q5"
-			(at 182.88 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "IRLML0030"
-			(at 180.34 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 181.61 100.965 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df"
-			(at 176.53 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 176.53 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c998b3e0-cf50-47bb-bc1a-5b0ca0279716")
-		)
-		(pin "2"
-			(uuid "7d8e149a-575e-4c62-a532-1792d1dc7d0e")
-		)
-		(pin "3"
-			(uuid "21424343-a2e9-4333-a864-19dc67a3c180")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/7bf72e12-8d12-4e35-9fad-8768305749e5"
-					(reference "Q5")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Transistor_FET:IRLML0030")
@@ -2071,75 +1518,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 195.58 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2c10cfe5-9dec-4d09-b111-ba1e88f33391")
-		(property "Reference" "R19"
-			(at 198.12 99.0599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1M"
-			(at 198.12 101.5999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 193.802 100.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 195.58 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 195.58 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4abcd0cf-3fc0-4401-af0a-bcfda227d4ac")
-		)
-		(pin "2"
-			(uuid "e8256895-3a70-448b-b4bf-ed1354f5485e")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/7bf72e12-8d12-4e35-9fad-8768305749e5"
-					(reference "R19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
 		(at 146.05 77.47 0)
 		(unit 1)
@@ -2211,153 +1589,6 @@
 			(project "PlacaJunio"
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/7bf72e12-8d12-4e35-9fad-8768305749e5"
 					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 218.44 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "32a2953f-f79e-44a2-b972-cd1f70720bf2")
-		(property "Reference" "R20"
-			(at 220.98 86.3599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3.3 Ohm 1%"
-			(at 220.98 88.8999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 216.662 87.63 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 218.44 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 218.44 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Nº Componente" "RCS08053R30FKEA"
-			(at 218.44 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fde97092-e7a1-4566-ba0b-87e5a97b60ef")
-		)
-		(pin "2"
-			(uuid "06ec6881-3a3c-42a4-bf43-87c4a6d69c55")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/7bf72e12-8d12-4e35-9fad-8768305749e5"
-					(reference "R20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 208.28 102.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4bae2a44-ffbc-4136-96ea-08fc13b52939")
-		(property "Reference" "R12"
-			(at 210.82 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 210.82 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 206.502 102.87 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 208.28 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 208.28 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8e44edd1-9ece-46a3-9dba-9fb4ca497026")
-		)
-		(pin "2"
-			(uuid "fc840f4a-e3a3-4cae-b924-749977f716b0")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/7bf72e12-8d12-4e35-9fad-8768305749e5"
-					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -2568,71 +1799,6 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 205.74 73.66 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5bb41ba0-5b81-4775-a623-f0216af63819")
-		(property "Reference" "#PWR015"
-			(at 209.55 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 199.898 73.66 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 205.74 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 205.74 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4fb01f62-3e22-465d-b1a9-ad06b792951b")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/7bf72e12-8d12-4e35-9fad-8768305749e5"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
 		(at 87.63 73.66 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2691,150 +1857,6 @@
 			(project "PlacaJunio"
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/7bf72e12-8d12-4e35-9fad-8768305749e5"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 179.07 106.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8c9bffbd-393d-44cf-934a-3d73b74f9f02")
-		(property "Reference" "#PWR014"
-			(at 179.07 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 179.07 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 179.07 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 179.07 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 179.07 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "50912c62-b65b-4384-a1a3-469c36306de9")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/7bf72e12-8d12-4e35-9fad-8768305749e5"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 179.07 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "90af3c20-33e4-437e-92a2-4f9d3a783bdc")
-		(property "Reference" "R16"
-			(at 181.61 86.3599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3.3 Ohm 1%"
-			(at 181.61 88.8999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 177.292 87.63 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 179.07 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 179.07 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Nº Componente" "RCS08053R30FKEA"
-			(at 179.07 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2fa5f08e-b3b0-429d-97aa-b33d36179ad4")
-		)
-		(pin "2"
-			(uuid "c0046e22-2a81-4534-8a51-32016f9c6c0a")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/7bf72e12-8d12-4e35-9fad-8768305749e5"
-					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -2979,292 +2001,6 @@
 			(project "PlacaJunio"
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/7bf72e12-8d12-4e35-9fad-8768305749e5"
 					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 218.44 106.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a42ea697-40aa-47b6-a43d-758ce198b22f")
-		(property "Reference" "#PWR016"
-			(at 218.44 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 218.44 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 218.44 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 218.44 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 218.44 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d6696035-aceb-47e9-9f73-2eb14c2e6df1")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/7bf72e12-8d12-4e35-9fad-8768305749e5"
-					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 233.68 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a50f1437-2330-4bf0-8712-a4efc5239c0d")
-		(property "Reference" "R21"
-			(at 236.22 97.7899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1M"
-			(at 236.22 100.3299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 231.902 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 233.68 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 233.68 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "eebf97b4-6471-4376-b048-2a3e8391e97d")
-		)
-		(pin "2"
-			(uuid "c7859bbb-7b07-4ba7-a831-71a0d7d66898")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/7bf72e12-8d12-4e35-9fad-8768305749e5"
-					(reference "R21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 184.15 77.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a646c916-da24-4725-91e7-7487d0fc6807")
-		(property "Reference" "J5"
-			(at 186.69 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Terminal P3"
-			(at 186.182 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
-			(at 184.15 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 184.15 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 184.15 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Enlace" "https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/282837-2/2187973"
-			(at 184.15 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3ff66a91-35e6-48c6-a363-96d9dbce325b")
-		)
-		(pin "2"
-			(uuid "623b1e84-783d-4b7d-83a8-2427b4cae45c")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/7bf72e12-8d12-4e35-9fad-8768305749e5"
-					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:IRLML0030")
-		(at 215.9 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c98bb359-4ec1-4df6-88a2-f73c2f569380")
-		(property "Reference" "Q6"
-			(at 222.25 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "IRLML0030"
-			(at 219.71 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 220.98 100.965 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df"
-			(at 215.9 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 215.9 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d03947dd-e520-4e0c-8e4f-bfe5ee084c90")
-		)
-		(pin "2"
-			(uuid "271df2f6-b27c-4ccd-b7f5-4bee135f7379")
-		)
-		(pin "3"
-			(uuid "e5824bd4-8c0b-4add-9b9f-44e5e558c5a9")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/7bf72e12-8d12-4e35-9fad-8768305749e5"
-					(reference "Q6")
 					(unit 1)
 				)
 			)
@@ -3418,71 +2154,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+BATT")
-		(at 166.37 73.66 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "da27fb48-4d40-4014-a13b-22f49e142ea8")
-		(property "Reference" "#PWR011"
-			(at 170.18 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 159.512 73.66 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 166.37 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 166.37 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 166.37 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1983a872-9be9-411e-b3da-862d83c3cedc")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/7bf72e12-8d12-4e35-9fad-8768305749e5"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Transistor_FET:IRLML0030")
 		(at 138.43 99.06 0)
 		(unit 1)
@@ -3617,83 +2288,6 @@
 			(project "PlacaJunio"
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/7bf72e12-8d12-4e35-9fad-8768305749e5"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 223.52 77.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fa82658d-d7fb-4365-a71d-fab4fe26a0f4")
-		(property "Reference" "J6"
-			(at 226.06 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Terminal P4"
-			(at 225.552 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
-			(at 223.52 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 223.52 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 223.52 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Enlace" "https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/282837-2/2187973"
-			(at 223.52 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "faa5d9a5-ffe8-466d-adec-8ad1811a28fb")
-		)
-		(pin "2"
-			(uuid "1e0809d4-7392-4e0d-a477-244fb8706c7d")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/7bf72e12-8d12-4e35-9fad-8768305749e5"
-					(reference "J6")
 					(unit 1)
 				)
 			)

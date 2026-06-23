@@ -622,7 +622,7 @@
 		)
 		(instances
 			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/bdc9d689-d351-4164-824d-829ac856903e"
+				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/5e6901b7-2508-4e4e-8a04-dcdebc2757da"
 					(reference "U2")
 					(unit 1)
 				)
@@ -689,7 +689,7 @@
 		)
 		(instances
 			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/bdc9d689-d351-4164-824d-829ac856903e"
+				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/5e6901b7-2508-4e4e-8a04-dcdebc2757da"
 					(reference "#PWR012")
 					(unit 1)
 				)
@@ -756,7 +756,7 @@
 		)
 		(instances
 			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/bdc9d689-d351-4164-824d-829ac856903e"
+				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/5e6901b7-2508-4e4e-8a04-dcdebc2757da"
 					(reference "#PWR017")
 					(unit 1)
 				)

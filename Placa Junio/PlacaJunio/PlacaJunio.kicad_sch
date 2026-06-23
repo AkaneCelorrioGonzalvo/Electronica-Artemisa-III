@@ -1075,7 +1075,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin bidirectional line
 					(at 21.59 31.75 180)
 					(length 3.81)
 					(name "D9"
@@ -2668,185 +2668,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "_mio:MODULO_MICROSD"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 1.016 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MODULO MICRO SD"
-				(at 9.398 -14.478 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Enlace" "https://es.aliexpress.com/item/1005008484394895.html?spm=a2g0o.productlist.main.3.58bb6171FoFWRP&algo_pvid=b43c9639-4c9b-4ddf-b46f-9e385e116079&algo_exp_id=b43c9639-4c9b-4ddf-b46f-9e385e116079-1&pdp_ext_f=%7B\"order\"%3A\"-1\"%2C\"eval\"%3A\"1\"%7D&pdp_npi=4@dis!EUR!1.86!0.93!!!13.84!6.92!@211b80e117401386807284036e9dc9!12000045348768761!sea!ES!6208873627!X&curPageLogUid=sASK1oi6YNbW&utparam-url=scene%3Asearch%7Cquery_from%3A"
-				(at 8.636 -19.05 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MODULO_MICROSD_1_1"
-				(rectangle
-					(start 2.54 -2.54)
-					(end 15.24 -12.7)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin power_in line
-					(at 0 -3.81 0)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 0 -11.43 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 17.78 -3.81 180)
-					(length 2.54)
-					(name "CS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 17.78 -6.35 180)
-					(length 2.54)
-					(name "SCK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 17.78 -8.89 180)
-					(length 2.54)
-					(name "MOSI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 17.78 -11.43 180)
-					(length 2.54)
-					(name "MISO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_numbers
@@ -3200,18 +3021,6 @@
 		)
 	)
 	(rectangle
-		(start 181.61 77.47)
-		(end 212.09 95.25)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 002f50e2-5704-4376-93ea-e27c65cae1d2)
-	)
-	(rectangle
 		(start 223.52 125.73)
 		(end 250.19 154.94)
 		(stroke
@@ -3325,17 +3134,6 @@
 		)
 		(uuid "a1c6ede1-278a-4e63-94c2-91f86025a996")
 	)
-	(text "Memoria"
-		(exclude_from_sim no)
-		(at 181.864 77.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bfbdc955-e185-4314-9385-067d2559b63f")
-	)
 	(text "Microcontrolador"
 		(exclude_from_sim no)
 		(at 118.11 67.31 0)
@@ -3360,16 +3158,16 @@
 		(uuid "423698ed-af51-4e68-8300-21e42a1f4ac2")
 	)
 	(junction
-		(at 64.77 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "54f113c5-95c2-4299-8d14-18a743e9064a")
-	)
-	(junction
 		(at 236.22 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5e6bf013-d6c9-4592-9732-790bb7a1afc4")
+	)
+	(junction
+		(at 66.04 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "691fd341-214b-46da-8c1d-b0e0c91de88a")
 	)
 	(junction
 		(at 226.06 140.97)
@@ -3543,13 +3341,13 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 87.63) (xy 219.71 87.63)
+			(xy 66.04 29.21) (xy 66.04 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0f0c021d-6ab6-4357-afc7-d6de490fd774")
+		(uuid "1004f9eb-a68a-4019-a472-df323505f16d")
 	)
 	(wire
 		(pts
@@ -3620,6 +3418,16 @@
 			(type default)
 		)
 		(uuid "1cb7ef4f-4936-456c-8324-4d5d3aa9901d")
+	)
+	(wire
+		(pts
+			(xy 66.04 34.29) (xy 73.66 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b7370c3-83cf-4e55-a13d-45e182d98249")
 	)
 	(wire
 		(pts
@@ -3703,16 +3511,6 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 85.09) (xy 219.71 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3bd245b5-65ad-4f99-9bcd-823c599cb86d")
-	)
-	(wire
-		(pts
 			(xy 226.06 140.97) (xy 228.6 140.97)
 		)
 		(stroke
@@ -3720,6 +3518,16 @@
 			(type default)
 		)
 		(uuid "3e9ab506-1876-404d-94af-e24767043c60")
+	)
+	(wire
+		(pts
+			(xy 179.07 104.14) (xy 168.91 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4621ce47-79ab-493a-bd99-3b7cf7cfed7d")
 	)
 	(wire
 		(pts
@@ -3783,13 +3591,13 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 29.21) (xy 64.77 34.29)
+			(xy 179.07 118.11) (xy 168.91 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "60c60fa1-d99e-4789-88ca-ae6871c396c6")
+		(uuid "6318d104-64c8-484c-a2c0-517131f33087")
 	)
 	(wire
 		(pts
@@ -3853,6 +3661,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 114.3) (xy 168.91 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a3a118f-3d68-4c5f-b3f4-cc52f1891cd1")
+	)
+	(wire
+		(pts
 			(xy 99.06 87.63) (xy 113.03 87.63)
 		)
 		(stroke
@@ -3870,6 +3688,16 @@
 			(type default)
 		)
 		(uuid "875decaf-91d7-4d78-8ce2-e05b92b06db3")
+	)
+	(wire
+		(pts
+			(xy 179.07 109.22) (xy 168.91 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d5a08f6-2e56-43ab-9264-5dcff7871224")
 	)
 	(wire
 		(pts
@@ -3933,23 +3761,13 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 34.29) (xy 73.66 34.29)
+			(xy 64.77 34.29) (xy 66.04 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ac662460-1e76-4d6c-91ab-7a1ee3301b5a")
-	)
-	(wire
-		(pts
-			(xy 209.55 90.17) (xy 219.71 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b005d0dd-bb8d-4bf0-9137-dbf403452769")
 	)
 	(wire
 		(pts
@@ -4020,16 +3838,6 @@
 			(type default)
 		)
 		(uuid "c275dcf5-c506-4b54-880a-895e8d104e33")
-	)
-	(wire
-		(pts
-			(xy 209.55 82.55) (xy 219.71 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3c3e86d-274b-41ee-89eb-2565abe5457c")
 	)
 	(wire
 		(pts
@@ -4231,6 +4039,16 @@
 		)
 		(uuid "0ab07237-1d40-4c7c-948a-97f9f05a3255")
 	)
+	(label "MOSI"
+		(at 168.91 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0e3a1ae5-9e2e-4163-b3a2-fa96ae4e0a81")
+	)
 	(label "PARACAIDAS 3"
 		(at 157.48 82.55 180)
 		(effects
@@ -4260,6 +4078,16 @@
 			(justify right bottom)
 		)
 		(uuid "24ace9b6-fbe7-4e03-91b5-93bee68773f9")
+	)
+	(label "MISO"
+		(at 168.91 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2e8c6910-03e9-48d3-94d6-747ff48aa65b")
 	)
 	(label "SENSE 4"
 		(at 99.06 90.17 0)
@@ -4301,16 +4129,6 @@
 		)
 		(uuid "3b661129-375e-4471-a195-24943f5f47b7")
 	)
-	(label "MOSI"
-		(at 219.71 87.63 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5060ee21-1a6b-420f-80f7-897a4310979d")
-	)
 	(label "SENSE 2"
 		(at 99.06 85.09 0)
 		(effects
@@ -4320,16 +4138,6 @@
 			(justify left bottom)
 		)
 		(uuid "52a10b19-adac-4ded-9097-605750ef851e")
-	)
-	(label "SCK"
-		(at 219.71 85.09 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "552db2dc-bd4b-4f16-9dc5-1b4d98df6aea")
 	)
 	(label "SENSE 3"
 		(at 135.89 153.67 0)
@@ -4360,16 +4168,6 @@
 			(justify left bottom)
 		)
 		(uuid "61e35793-a63b-4fe6-80bd-77cde5274334")
-	)
-	(label "SD_CS"
-		(at 219.71 82.55 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "62d070dd-c000-444e-a386-643a58dda351")
 	)
 	(label "RX_GPS"
 		(at 152.4 107.95 180)
@@ -4421,6 +4219,16 @@
 		)
 		(uuid "697928bb-3bf6-4d1f-a185-8f883335fd84")
 	)
+	(label "SCK"
+		(at 168.91 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6b9f075a-1322-41de-8654-d1775e05c50d")
+	)
 	(label "SENSE 2"
 		(at 72.39 162.56 180)
 		(effects
@@ -4471,6 +4279,16 @@
 		)
 		(uuid "81074f94-c4b1-4193-926c-2df204b2f019")
 	)
+	(label "SD_CS"
+		(at 168.91 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9495d82d-7baa-4d9b-88ff-c097d8278611")
+	)
 	(label "PARACAIDAS 1"
 		(at 77.47 132.08 180)
 		(effects
@@ -4500,16 +4318,6 @@
 			(justify right bottom)
 		)
 		(uuid "9a8e19d5-55a8-4171-9b67-75ca63623afc")
-	)
-	(label "MISO"
-		(at 219.71 90.17 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a46fa550-d0a1-40c2-b36f-309f8e74dc2b")
 	)
 	(label "TX_LoRa"
 		(at 184.15 50.8 0)
@@ -4570,6 +4378,158 @@
 			(justify left bottom)
 		)
 		(uuid "ff0a2031-a228-47b1-988a-a3a65b7f6e78")
+	)
+	(symbol
+		(lib_id "CoheteJulio:Nano_33_BLE_Sense")
+		(at 116.84 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "02c374fc-d04d-4856-b570-5794ef6f789b")
+		(property "Reference" "U1"
+			(at 125.73 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 125.73 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 116.84 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "97c8a374-6563-46aa-bfe3-f4ff40c6db15")
+		)
+		(pin "15"
+			(uuid "e43e8b4a-c8a1-4ced-85df-87566eaa8f7b")
+		)
+		(pin "5"
+			(uuid "3f27cd6e-7939-4900-bbb1-9779f4219d91")
+		)
+		(pin "11"
+			(uuid "70df64f0-4ca6-4fe7-b24d-acb3a6ed197e")
+		)
+		(pin "22"
+			(uuid "f6bd1d86-53cb-4d93-aef7-5364e518d432")
+		)
+		(pin "21"
+			(uuid "b9302908-0b3b-4d0f-8dc5-551c9a61fd4a")
+		)
+		(pin "2"
+			(uuid "cbdb9070-eec7-4326-acd7-bd4109e9d179")
+		)
+		(pin "1"
+			(uuid "e279cd94-9927-4f7b-b5f2-5cf8af281309")
+		)
+		(pin "3"
+			(uuid "cd8d6cd2-daa4-4c3c-934b-40d13897c8b7")
+		)
+		(pin "10"
+			(uuid "51e86023-c126-4276-9356-4025cd3289ad")
+		)
+		(pin "12"
+			(uuid "c0fd0111-8e3e-41ba-9d5d-32d2d4e9718c")
+		)
+		(pin "13"
+			(uuid "821db0d9-289e-4b96-8ed3-eb97b970bc70")
+		)
+		(pin "14"
+			(uuid "0e8331f1-0463-4207-9827-74fe5b43bc44")
+		)
+		(pin "29"
+			(uuid "94c7d3c9-039d-442f-aa56-9a35a41f2988")
+		)
+		(pin "8"
+			(uuid "7ace631b-0f6d-4a71-a56f-b6c2113fbe74")
+		)
+		(pin "28"
+			(uuid "1c2d7f85-5b29-46a2-9db1-bcd1c3452769")
+		)
+		(pin "26"
+			(uuid "6cb54d12-cf35-4e57-b5fc-689da3e54a33")
+		)
+		(pin "25"
+			(uuid "9c8a349b-def0-4cc6-b234-35c3c7260f8f")
+		)
+		(pin "7"
+			(uuid "e5587fa7-c5a6-412a-9d54-6d68795b5492")
+		)
+		(pin "23"
+			(uuid "4ef3b1cc-3f7b-458b-bdf5-98211143cb57")
+		)
+		(pin "4"
+			(uuid "ee3a3f80-7307-4b93-852e-9d5af57db82b")
+		)
+		(pin "9"
+			(uuid "c81c36a4-98f1-46cc-bab6-a32f314058d3")
+		)
+		(pin "27"
+			(uuid "59dc109d-46a8-4338-8054-fb2037e314fe")
+		)
+		(pin "30"
+			(uuid "fbe33906-7f3b-4612-808b-e773fa01d035")
+		)
+		(pin "24"
+			(uuid "58d99c16-e31a-4cb9-970b-74b3eb1f7430")
+		)
+		(pin "16"
+			(uuid "8c5cfa9c-4496-4862-b379-2dce8dca8db6")
+		)
+		(pin "18"
+			(uuid "cce508f9-f388-4a57-9f1b-87d91bb3d977")
+		)
+		(pin "20"
+			(uuid "49a0cd72-bce9-49de-bf60-b3cfa54e290b")
+		)
+		(pin "17"
+			(uuid "d322688c-4d92-4e47-ae27-2aea817e68b1")
+		)
+		(pin "19"
+			(uuid "a43cc688-63f4-4b67-a584-ebb72de60456")
+		)
+		(instances
+			(project ""
+				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:Buzzer")
@@ -4902,94 +4862,6 @@
 			(project "PlacaJunio"
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
 					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "_mio:MODULO_MICROSD")
-		(at 191.77 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3e1a466b-9797-4b75-82d1-a1f8d0d984d9")
-		(property "Reference" "U4"
-			(at 195.58 78.994 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MODULO MICRO SD"
-			(at 201.422 93.472 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 191.77 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 191.77 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 191.77 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Enlace" ""
-			(at 200.406 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "af37cc88-32e3-464e-989c-4466f4df4503")
-		)
-		(pin "6"
-			(uuid "ae2a9280-ad98-43c1-8845-eb56f9276506")
-		)
-		(pin "1"
-			(uuid "eac37832-68da-4e97-8e5d-0ff8e1e1b806")
-		)
-		(pin "2"
-			(uuid "580b44a8-29e2-4474-96ad-94c8eef3c5f7")
-		)
-		(pin "4"
-			(uuid "95a2325b-617d-4a31-b798-b33c686c3496")
-		)
-		(pin "3"
-			(uuid "afd76bb5-ee17-4cba-9e1c-c7973432fb3d")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
-					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -5494,7 +5366,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 64.77 29.21 0)
+		(at 66.04 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5503,7 +5375,7 @@
 		(fields_autoplaced yes)
 		(uuid "7ca573c6-055b-444a-abc5-707de2acc2df")
 		(property "Reference" "#PWR018"
-			(at 64.77 33.02 0)
+			(at 66.04 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5512,7 +5384,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 64.77 24.13 0)
+			(at 66.04 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5520,7 +5392,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 29.21 0)
+			(at 66.04 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5529,7 +5401,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 29.21 0)
+			(at 66.04 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5538,7 +5410,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 64.77 29.21 0)
+			(at 66.04 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5759,225 +5631,6 @@
 			(project ""
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
 					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CoheteJulio:Nano_33_BLE_Sense")
-		(at 116.84 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8d9759e4-7832-492e-99d5-c1b461ca527a")
-		(property "Reference" "U1"
-			(at 125.73 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 125.73 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 116.84 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 116.84 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 116.84 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ae8f044a-0103-4960-9ad7-7dcf08762d1b")
-		)
-		(pin "11"
-			(uuid "03ead07d-7f60-48bf-8321-3119b6b90939")
-		)
-		(pin "23"
-			(uuid "41339137-860d-4b85-9252-05d01d937921")
-		)
-		(pin "9"
-			(uuid "31cfe3de-3c65-43df-aaea-5abcb38bcae0")
-		)
-		(pin "19"
-			(uuid "1656d333-8ba5-40d6-a048-fd7703d3bb0e")
-		)
-		(pin "14"
-			(uuid "6a904db5-60e9-44e0-8e9f-5a3184ea0acb")
-		)
-		(pin "30"
-			(uuid "4a11fd69-055e-47ed-a8ec-9734c4379891")
-		)
-		(pin "6"
-			(uuid "c3b22a96-a3bd-4384-a76d-239355aa4f83")
-		)
-		(pin "21"
-			(uuid "0e7a8496-c3da-40ac-b472-777802e6e1e1")
-		)
-		(pin "29"
-			(uuid "5b29c096-7158-440d-9dad-0b244ec9ac95")
-		)
-		(pin "5"
-			(uuid "8f8b780d-30ad-4ba3-9a3f-d4e43fd2c17c")
-		)
-		(pin "4"
-			(uuid "2f17161c-afb0-41fc-8c62-0b78e63a2f19")
-		)
-		(pin "7"
-			(uuid "be7cfa63-1037-49b0-a10e-39255508ba9b")
-		)
-		(pin "10"
-			(uuid "35fc4b0b-2d3c-46a4-8a2a-b15f2aba2f5d")
-		)
-		(pin "24"
-			(uuid "99b23bb9-b019-42cf-93e8-ef4b7a0ee53b")
-		)
-		(pin "12"
-			(uuid "2f6e4f43-eeda-45ef-b404-c8810451b4f2")
-		)
-		(pin "2"
-			(uuid "7caf4d4d-7d94-4841-8edf-97e35aefaf8c")
-		)
-		(pin "3"
-			(uuid "ff40e68e-3642-412e-a893-a598b166b75b")
-		)
-		(pin "8"
-			(uuid "b7171b95-4749-4b7f-97d9-2dca9a71aff8")
-		)
-		(pin "28"
-			(uuid "2de8419b-3506-465c-8fa7-e55a84ade810")
-		)
-		(pin "13"
-			(uuid "ef1dad6b-a2b1-4b27-be58-481b323ad4f7")
-		)
-		(pin "27"
-			(uuid "2631c828-d5eb-4a07-9c05-191882acd2cd")
-		)
-		(pin "26"
-			(uuid "38ab9cb7-71ad-47f6-9fd2-dcecba55948f")
-		)
-		(pin "25"
-			(uuid "3f2794c3-9c72-40ab-9a31-563e318a0932")
-		)
-		(pin "15"
-			(uuid "822b268e-472c-439e-bd7a-8704f6b89935")
-		)
-		(pin "22"
-			(uuid "a24707fe-47dd-4b17-af4e-be5cb48e5f15")
-		)
-		(pin "20"
-			(uuid "6cce322b-c7b0-4b62-b1ff-5e26608cc936")
-		)
-		(pin "18"
-			(uuid "8e8a699f-19b3-4ece-b5f0-3dc7ceed30e8")
-		)
-		(pin "17"
-			(uuid "f14234d5-a75f-499f-afbf-eee5c5d9d4c2")
-		)
-		(pin "16"
-			(uuid "428a57a3-3f24-481e-a10c-953fd6c05d2e")
-		)
-		(instances
-			(project ""
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 191.77 82.55 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "92910f9d-6140-4ac0-93ed-efe557712ddc")
-		(property "Reference" "#PWR012"
-			(at 195.58 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 187.96 82.5499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 191.77 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 191.77 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 191.77 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9527b140-56ce-43cf-8342-33a31e369783")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
-					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -6659,73 +6312,6 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 191.77 90.17 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ff92312a-9cfa-40dd-bc7f-67b487e33c23")
-		(property "Reference" "#PWR017"
-			(at 185.42 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 187.96 90.1699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 191.77 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 191.77 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 191.77 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "983c42b8-8657-4734-8657-d84d1e2dca33")
-		)
-		(instances
-			(project "PlacaJunio"
-				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
 	(sheet
 		(at 78.74 127)
 		(size 50.8 41.91)
@@ -6844,6 +6430,88 @@
 			(project "PlacaJunio"
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 179.07 100.33)
+		(size 25.4 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bdc9d689-d351-4164-824d-829ac856903e")
+		(property "Sheetname" "MicroSD"
+			(at 179.07 99.6184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MicroSD.kicad_sch"
+			(at 179.07 121.2346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "MISO" output
+			(at 179.07 104.14 180)
+			(uuid "1f95ba13-95d4-4392-8e05-122e425e7c79")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MOSI" input
+			(at 179.07 109.22 180)
+			(uuid "e53b1dbc-b02a-47f8-9e08-cc4c35b929fc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCK" input
+			(at 179.07 114.3 180)
+			(uuid "02d60301-cd4c-48f9-8f1c-fe50fa4687eb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SD_CS" input
+			(at 179.07 118.11 180)
+			(uuid "b0b323ac-23d7-42d8-9ebe-639aeb7c6bda")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "PlacaJunio"
+				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
+					(page "3")
 				)
 			)
 		)

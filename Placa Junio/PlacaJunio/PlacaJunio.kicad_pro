@@ -620,6 +620,10 @@
     [
       "7bf72e12-8d12-4e35-9fad-8768305749e5",
       "Screw_Terminals"
+    ],
+    [
+      "bdc9d689-d351-4164-824d-829ac856903e",
+      "MicroSD"
     ]
   ],
   "text_variables": {}

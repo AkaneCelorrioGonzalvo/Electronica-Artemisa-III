@@ -1304,7 +1304,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin bidirectional line
 				(at 21.59 31.75 180)
 				(length 3.81)
 				(name "D9"

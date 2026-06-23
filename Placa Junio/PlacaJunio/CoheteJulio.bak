@@ -998,7 +998,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin power_in line
 				(at -3.81 36.83 0)
 				(length 3.81)
 				(name "+3v3"
@@ -1304,7 +1304,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin bidirectional line
 				(at 21.59 31.75 180)
 				(length 3.81)
 				(name "D9"

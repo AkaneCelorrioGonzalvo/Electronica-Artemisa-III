@@ -1,4 +1,4 @@
-25214288186419497
+25216070395847722
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -6551,6 +6551,13 @@ LoRa
 0
 7
 7
+Cohete_Julio
+MicroSD
+
+
+0
+6
+6
 Cohete_Julio
 Nano BLE 33 Sense
 Arduino Nano, http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf

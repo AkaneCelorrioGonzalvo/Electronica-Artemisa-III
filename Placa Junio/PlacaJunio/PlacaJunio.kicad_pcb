@@ -7295,6 +7295,19 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "FALTA DIODO PARA EL BUZZER\n"
+		(at 170.7 69.2 0)
+		(layer "F.SilkS")
+		(uuid "2d8178c9-5a0b-4b64-967e-9c7a47797672")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "ARMADO"
 		(at 140.7 34.1 0)
 		(layer "F.SilkS")
@@ -7308,7 +7321,20 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "CORTAR LA PISTA DE 3V3\nANTES DE SOLDAR !!!\n"
+	(gr_text "FALTAN SCREWHOLES"
+		(at 171 62.7 0)
+		(layer "F.SilkS")
+		(uuid "79feb451-ae31-4470-9d54-9bd99392b44b")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "CORTAR EL JUMPER DE 3V3\nANTES DE SOLDAR !!!\n"
 		(at 148.6 103 90)
 		(layer "F.SilkS")
 		(uuid "b914ba8c-2fd1-45cf-9bce-48b588139a33")

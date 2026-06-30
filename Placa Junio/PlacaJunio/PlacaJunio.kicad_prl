@@ -124,6 +124,18 @@
           "size_x": 1938,
           "size_y": 1098
         }
+      },
+      {
+        "name": "PlacaJunio.kicad_pcb",
+        "open": true,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": -9,
+          "pos_y": -9,
+          "size_x": 1938,
+          "size_y": 1098
+        }
       }
     ]
   },

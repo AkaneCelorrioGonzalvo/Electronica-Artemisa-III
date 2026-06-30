@@ -4060,7 +4060,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 95.25) (xy 49.53 95.25)
+			(xy 31.75 100.33) (xy 49.53 100.33)
 		)
 		(stroke
 			(width 0)
@@ -4150,7 +4150,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 95.25) (xy 92.71 95.25)
+			(xy 80.01 100.33) (xy 92.71 100.33)
 		)
 		(stroke
 			(width 0)
@@ -4310,16 +4310,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 102.87) (xy 80.01 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6776908f-dd59-4fd3-9234-af5e051fa6c1")
-	)
-	(wire
-		(pts
 			(xy 193.04 38.1) (xy 210.82 38.1)
 		)
 		(stroke
@@ -4357,16 +4347,6 @@
 			(type default)
 		)
 		(uuid "796284c9-584e-4fad-a903-ba0641724c0b")
-	)
-	(wire
-		(pts
-			(xy 31.75 99.06) (xy 49.53 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8184bd30-d20f-4458-832b-cb72042db95f")
 	)
 	(wire
 		(pts
@@ -4650,16 +4630,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 102.87) (xy 31.75 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3376612-096c-43e3-b3e7-2186b45b561d")
-	)
-	(wire
-		(pts
 			(xy 62.23 50.8) (xy 73.66 50.8)
 		)
 		(stroke
@@ -4770,16 +4740,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 99.06) (xy 80.01 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e520deeb-bb91-457b-a046-6c6f67131b16")
-	)
-	(wire
-		(pts
 			(xy 113.03 101.6) (xy 128.27 101.6)
 		)
 		(stroke
@@ -4807,16 +4767,6 @@
 			(justify left bottom)
 		)
 		(uuid "014ec452-cc2b-4c7d-959b-147339c4d5c6")
-	)
-	(label "PARACAIDAS 3"
-		(at 31.75 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "072ff073-0309-426e-9ac0-8414d9d5a2bd")
 	)
 	(label "D5"
 		(at 71.12 142.24 180)
@@ -4938,16 +4888,6 @@
 		)
 		(uuid "538f5946-c0f6-44e1-bb80-6549e77342b3")
 	)
-	(label "SENSE 3"
-		(at 92.71 99.06 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5bbdb3ef-1a7b-4d9c-94b0-204652c5aa22")
-	)
 	(label "SENSE 1"
 		(at 113.03 88.9 0)
 		(effects
@@ -4957,16 +4897,6 @@
 			(justify left bottom)
 		)
 		(uuid "5f2091d4-dbd0-4cb0-a603-41bbcc36ad29")
-	)
-	(label "SENSE 4"
-		(at 92.71 102.87 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "61e35793-a63b-4fe6-80bd-77cde5274334")
 	)
 	(label "RX_GPS"
 		(at 167.64 116.84 180)
@@ -5019,7 +4949,7 @@
 		(uuid "6b0a08be-f7c4-4150-9e31-a0cdcc28ee0b")
 	)
 	(label "SENSE 2"
-		(at 92.71 95.25 180)
+		(at 92.71 100.33 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5037,16 +4967,6 @@
 			(justify right bottom)
 		)
 		(uuid "7483b5c8-5766-48f5-8382-1554e5dd9e17")
-	)
-	(label "PARACAIDAS 4"
-		(at 31.75 102.87 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "783afee7-6ac5-449d-a5bb-ab96b861f0ee")
 	)
 	(label "TX_GPS"
 		(at 167.64 114.3 180)
@@ -5219,7 +5139,7 @@
 		(uuid "ddf6f4a2-e0a7-4307-97d4-08c569f121d4")
 	)
 	(label "PARACAIDAS 2"
-		(at 31.75 95.25 0)
+		(at 31.75 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7963,28 +7883,8 @@
 			)
 		)
 		(pin "PARACAIDAS 2" input
-			(at 49.53 95.25 180)
+			(at 49.53 100.33 180)
 			(uuid "634f664d-dc0c-4f1f-8856-e2b6392a0b8e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "PARACAIDAS 3" input
-			(at 49.53 99.06 180)
-			(uuid "2a574244-48dc-4a60-bec9-a22df91a2360")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "PARACAIDAS 4" input
-			(at 49.53 102.87 180)
-			(uuid "2a94a745-b1c9-4731-97be-cb726420930b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8003,28 +7903,8 @@
 			)
 		)
 		(pin "SENSE2" output
-			(at 80.01 95.25 0)
+			(at 80.01 100.33 0)
 			(uuid "b28b4ded-d2ba-4185-8f06-8260d1d472a8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "SENSE3" output
-			(at 80.01 99.06 0)
-			(uuid "dc74b945-7607-416c-8f0b-cb47490b8b19")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "SENSE4" output
-			(at 80.01 102.87 0)
-			(uuid "3009fcd5-6196-4d78-bafd-8f851e193a4a")
 			(effects
 				(font
 					(size 1.27 1.27)

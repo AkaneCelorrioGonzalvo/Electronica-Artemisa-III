@@ -1,9 +1,0 @@
-Manufacturer=Quectel
-PartNumber=LC86LICMD
-PartCategory=Integrated Circuit
-PackageCategory=Other
-PinCount=12
-Version=2.2
-Released=2021-12-02 10:25:46
-Downloaded=2026-06-18 15:05:51
-3D=Y

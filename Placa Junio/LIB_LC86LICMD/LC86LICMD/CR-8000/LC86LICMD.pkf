@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "LC86LICMD"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "LC86LICMD")
+        (spec "default")
+    )
+)

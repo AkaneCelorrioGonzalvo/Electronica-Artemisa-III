@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Cohete_Julio")(type "KiCad")(uri "${KIPRJMOD}/Cohete_Julio.pretty")(options "")(descr ""))
+)

@@ -1,0 +1,172 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "LC86LICMD"
+   (description "Quectel Wireless Solutions")
+   (family "ANA")
+   (package "LC86LICMD")
+   (attribute "Datasheet Link" "https://cdn.sos.sk/productdata/39/c0/eb20bda6/lc86l.pdf")
+   (attribute "Geometry.Height" "7.05mm")
+   (attribute "Mouser Part Number" "277-LC86LICMD")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Quectel/LC86LICMD?qs=iLbezkQI%252BsiFPFQjIwBL1Q%3D%3D")
+   (attribute "Manufacturer_Name" "Quectel")
+   (attribute "Manufacturer_Part_Number" "LC86LICMD")
+   (gate
+    (symbol "LC86LICMD")
+    (pin "RXD" 1 PS)
+    (pin "TXD" 2 PS)
+    (pin "GND_1" 3 PS)
+    (pin "VCC" 4 PS)
+    (pin "V_BCKP" 5 PS)
+    (pin "1PPS" 6 PS)
+    (pin "FORCE_ON" 7 PS)
+    (pin "AADET_N" 8 PS)
+    (pin "RESERVED" 9 PS)
+    (pin "RESET_N" 10 PS)
+    (pin "EX_ANT" 11 PS)
+    (pin "GND_2" 12 PS)
+   )
+  )
+  (symbol "LC86LICMD"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 1200 100) (pt 1200 -600) (pt 200 -600) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 1400 -500) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -400) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -400) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -500) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "LC86LICMD"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -8 8)
+      (pt 8 8)
+      (pt 8 -8)
+      (pt -8 -8)
+      (pt -8 8))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -10 9)
+      (pt 10 9)
+      (pt 10 -9)
+      (pt -10 -9)
+      (pt -10 9))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt 9.4 -6.35)
+      (arc (pt 9.400 -6.350) (pt 9.400 -6.400) (pt 9.500 -6.300) (start 180.0) (sweep 180.0))
+      (pt 9.5 -6.35)
+      (arc (pt 9.500 -6.350) (pt 9.400 -6.400) (pt 9.500 -6.300) (start 180.0) (sweep .0))
+      (pt 9.4 -6.35))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -8 7.2)
+      (pt -8 8)
+      (pt 8 8)
+      (pt 8 7.2))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -8 -7.2)
+      (pt -8 -8)
+      (pt 8 -8)
+      (pt 8 -7.2))))
+   (leg 1 (pt 7.750 -6.350) (padstack 0))
+   (leg 2 (pt 7.750 -3.810) (padstack 0))
+   (leg 3 (pt 7.750 -1.270) (padstack 0))
+   (leg 4 (pt 7.750 1.270) (padstack 0))
+   (leg 5 (pt 7.750 3.810) (padstack 0))
+   (leg 6 (pt 7.750 6.350) (padstack 0))
+   (leg 7 (pt -7.750 6.350) (padstack 0))
+   (leg 8 (pt -7.750 3.810) (padstack 0))
+   (leg 9 (pt -7.750 1.270) (padstack 0))
+   (leg 10 (pt -7.750 -1.270) (padstack 0))
+   (leg 11 (pt -7.750 -3.810) (padstack 0))
+   (leg 12 (pt -7.750 -6.350) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (ovalf 1.000 2.500 0 0.000))
+   )
+   (model "LC86LICMD.stp"
+    (euler 90 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

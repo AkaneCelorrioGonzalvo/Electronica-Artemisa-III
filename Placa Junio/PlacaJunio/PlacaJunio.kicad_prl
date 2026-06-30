@@ -114,6 +114,7 @@
   "project": {
     "files": [
       {
+<<<<<<< Updated upstream
         "name": "PlacaJunio.kicad_sch",
         "open": false,
         "window": {
@@ -128,6 +129,10 @@
       {
         "name": "PlacaJunio.kicad_pcb",
         "open": true,
+=======
+        "name": "PlacaJunio.kicad_pcb",
+        "open": false,
+>>>>>>> Stashed changes
         "window": {
           "display": 0,
           "maximized": true,

@@ -559,7 +559,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06864668-14b7-4923-a4a3-f7db76089ecf")
-		(property "Reference" "U2"
+		(property "Reference" "U4"
 			(at 132.08 63.5 0)
 			(effects
 				(font
@@ -623,7 +623,7 @@
 		(instances
 			(project "PlacaJunio"
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/5e6901b7-2508-4e4e-8a04-dcdebc2757da"
-					(reference "U2")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -639,7 +639,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92910f9d-6140-4ac0-93ed-efe557712ddc")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR022"
 			(at 127 68.58 0)
 			(effects
 				(font
@@ -690,7 +690,7 @@
 		(instances
 			(project "PlacaJunio"
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/5e6901b7-2508-4e4e-8a04-dcdebc2757da"
-					(reference "#PWR012")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -706,7 +706,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff92312a-9cfa-40dd-bc7f-67b487e33c23")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR023"
 			(at 116.84 76.2 0)
 			(effects
 				(font
@@ -757,7 +757,7 @@
 		(instances
 			(project "PlacaJunio"
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603/5e6901b7-2508-4e4e-8a04-dcdebc2757da"
-					(reference "#PWR017")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)

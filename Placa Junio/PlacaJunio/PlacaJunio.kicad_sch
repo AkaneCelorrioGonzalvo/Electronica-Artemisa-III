@@ -3689,7 +3689,7 @@
 	)
 	(rectangle
 		(start 125.73 146.05)
-		(end 152.4 181.61)
+		(end 163.83 181.61)
 		(stroke
 			(width 0)
 			(type default)
@@ -3748,8 +3748,8 @@
 		(uuid 63a5bc7c-2675-4d5b-8eee-149c32b03bf2)
 	)
 	(rectangle
-		(start 45.72 82.55)
-		(end 83.82 110.49)
+		(start 39.37 82.55)
+		(end 77.47 101.6)
 		(stroke
 			(width 0)
 			(type default)
@@ -3828,6 +3828,17 @@
 		)
 		(uuid "399cba83-9f51-49bc-9baa-0ec923b94a90")
 	)
+	(text "Tiene que ser activo"
+		(exclude_from_sim no)
+		(at 151.892 161.798 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 194 0 1)
+			)
+		)
+		(uuid "58048162-240e-48df-b302-b7a65810a071")
+	)
 	(text "Regulador Tensión\n"
 		(exclude_from_sim no)
 		(at 58.42 31.75 0)
@@ -3873,7 +3884,7 @@
 	)
 	(text "Control Cargas pólvora"
 		(exclude_from_sim no)
-		(at 45.72 82.042 0)
+		(at 39.37 82.042 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3995,10 +4006,6 @@
 		(uuid "36a1b284-c2de-4ab2-abac-f54cde10fb45")
 	)
 	(no_connect
-		(at 128.27 93.98)
-		(uuid "3f7e2349-a7bd-4f9a-af3f-8e30ac11ab6b")
-	)
-	(no_connect
 		(at 128.27 109.22)
 		(uuid "6158cb98-d851-4b05-bd2b-12bd18abc6d5")
 	)
@@ -4060,7 +4067,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 95.25) (xy 49.53 95.25)
+			(xy 25.4 95.25) (xy 43.18 95.25)
 		)
 		(stroke
 			(width 0)
@@ -4150,7 +4157,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 95.25) (xy 92.71 95.25)
+			(xy 73.66 95.25) (xy 86.36 95.25)
 		)
 		(stroke
 			(width 0)
@@ -4230,7 +4237,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 91.44) (xy 49.53 91.44)
+			(xy 25.4 91.44) (xy 43.18 91.44)
 		)
 		(stroke
 			(width 0)
@@ -4290,16 +4297,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 40.64) (xy 45.72 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61415255-a85c-49d9-8cd3-a7b5657c0f85")
-	)
-	(wire
-		(pts
 			(xy 153.67 86.36) (xy 165.1 86.36)
 		)
 		(stroke
@@ -4307,16 +4304,6 @@
 			(type default)
 		)
 		(uuid "6625de7b-06b7-477c-9d63-a607683f0454")
-	)
-	(wire
-		(pts
-			(xy 92.71 102.87) (xy 80.01 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6776908f-dd59-4fd3-9234-af5e051fa6c1")
 	)
 	(wire
 		(pts
@@ -4347,26 +4334,6 @@
 			(type default)
 		)
 		(uuid "773a3794-a65a-40a7-8028-b43fa89fb8d4")
-	)
-	(wire
-		(pts
-			(xy 113.03 81.28) (xy 128.27 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "796284c9-584e-4fad-a903-ba0641724c0b")
-	)
-	(wire
-		(pts
-			(xy 31.75 99.06) (xy 49.53 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8184bd30-d20f-4458-832b-cb72042db95f")
 	)
 	(wire
 		(pts
@@ -4470,6 +4437,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 93.98) (xy 128.27 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a17dfe1c-ccb0-4414-93fb-beae65efd20c")
+	)
+	(wire
+		(pts
 			(xy 232.41 109.22) (xy 234.95 109.22)
 		)
 		(stroke
@@ -4537,16 +4514,6 @@
 			(type default)
 		)
 		(uuid "b0881615-8fe7-4c05-af99-0a956f384fab")
-	)
-	(wire
-		(pts
-			(xy 48.26 40.64) (xy 54.61 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0ef1e0a-14f1-45d5-8667-37e1833513b8")
 	)
 	(wire
 		(pts
@@ -4650,13 +4617,13 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 102.87) (xy 31.75 102.87)
+			(xy 109.22 81.28) (xy 128.27 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d3376612-096c-43e3-b3e7-2186b45b561d")
+		(uuid "cc2fa543-7e4b-44f0-bb23-c9ab7889d173")
 	)
 	(wire
 		(pts
@@ -4750,13 +4717,23 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 91.44) (xy 92.71 91.44)
+			(xy 73.66 91.44) (xy 86.36 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "de455b3a-6621-4d5d-90b4-ac27334b1d5b")
+	)
+	(wire
+		(pts
+			(xy 52.07 40.64) (xy 54.61 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df5cf7b4-eea9-4437-8b32-da49820713b2")
 	)
 	(wire
 		(pts
@@ -4767,16 +4744,6 @@
 			(type default)
 		)
 		(uuid "e186625e-35dc-4c5f-9155-d60cc7707641")
-	)
-	(wire
-		(pts
-			(xy 92.71 99.06) (xy 80.01 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e520deeb-bb91-457b-a046-6c6f67131b16")
 	)
 	(wire
 		(pts
@@ -4807,16 +4774,6 @@
 			(justify left bottom)
 		)
 		(uuid "014ec452-cc2b-4c7d-959b-147339c4d5c6")
-	)
-	(label "PARACAIDAS 3"
-		(at 31.75 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "072ff073-0309-426e-9ac0-8414d9d5a2bd")
 	)
 	(label "D5"
 		(at 71.12 142.24 180)
@@ -4869,7 +4826,7 @@
 		(uuid "2d03ac57-3939-46c4-b59e-fc2edec67457")
 	)
 	(label "SENSE 1"
-		(at 92.71 91.44 180)
+		(at 86.36 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4928,26 +4885,6 @@
 		)
 		(uuid "53744a70-4e57-4690-ac32-92d28001f148")
 	)
-	(label "Buzzer"
-		(at 113.03 81.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "538f5946-c0f6-44e1-bb80-6549e77342b3")
-	)
-	(label "SENSE 3"
-		(at 92.71 99.06 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5bbdb3ef-1a7b-4d9c-94b0-204652c5aa22")
-	)
 	(label "SENSE 1"
 		(at 113.03 88.9 0)
 		(effects
@@ -4957,16 +4894,6 @@
 			(justify left bottom)
 		)
 		(uuid "5f2091d4-dbd0-4cb0-a603-41bbcc36ad29")
-	)
-	(label "SENSE 4"
-		(at 92.71 102.87 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "61e35793-a63b-4fe6-80bd-77cde5274334")
 	)
 	(label "RX_GPS"
 		(at 167.64 116.84 180)
@@ -5018,8 +4945,18 @@
 		)
 		(uuid "6b0a08be-f7c4-4150-9e31-a0cdcc28ee0b")
 	)
+	(label "Buzzer"
+		(at 113.03 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6f364d47-280e-42c0-940a-77b33a932fba")
+	)
 	(label "SENSE 2"
-		(at 92.71 95.25 180)
+		(at 86.36 95.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5037,16 +4974,6 @@
 			(justify right bottom)
 		)
 		(uuid "7483b5c8-5766-48f5-8382-1554e5dd9e17")
-	)
-	(label "PARACAIDAS 4"
-		(at 31.75 102.87 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "783afee7-6ac5-449d-a5bb-ab96b861f0ee")
 	)
 	(label "TX_GPS"
 		(at 167.64 114.3 180)
@@ -5119,7 +5046,7 @@
 		(uuid "97e08e44-27ea-4fef-a78e-21d0d96cc639")
 	)
 	(label "PARACAIDAS 1"
-		(at 31.75 91.44 0)
+		(at 25.4 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5219,7 +5146,7 @@
 		(uuid "ddf6f4a2-e0a7-4307-97d4-08c569f121d4")
 	)
 	(label "PARACAIDAS 2"
-		(at 31.75 95.25 0)
+		(at 25.4 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5237,6 +5164,16 @@
 			(justify right bottom)
 		)
 		(uuid "ea54acee-a87a-4150-ae80-a9abf79ead2e")
+	)
+	(label "Armado"
+		(at 113.03 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f019048a-fc2b-4168-a534-f7e01d1c0eed")
 	)
 	(label "SCK"
 		(at 194.31 78.74 0)
@@ -6988,8 +6925,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 38.1 40.64 0)
-		(mirror y)
+		(at 104.14 83.82 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6997,7 +6933,7 @@
 		(dnp no)
 		(uuid "a646c916-da24-4725-91e7-7487d0fc6807")
 		(property "Reference" "J5"
-			(at 35.56 40.64 0)
+			(at 102.362 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7006,7 +6942,7 @@
 			)
 		)
 		(property "Value" "Terminal P3"
-			(at 36.068 43.18 0)
+			(at 102.362 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7015,7 +6951,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
-			(at 38.1 40.64 0)
+			(at 104.14 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7024,7 +6960,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 38.1 40.64 0)
+			(at 104.14 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7033,7 +6969,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 38.1 40.64 0)
+			(at 104.14 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7041,7 +6977,7 @@
 			)
 		)
 		(property "Enlace" "https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/282837-2/2187973"
-			(at 38.1 40.64 0)
+			(at 104.14 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7503,7 +7439,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 43.18 43.18 0)
+		(at 52.07 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7511,7 +7447,7 @@
 		(dnp no)
 		(uuid "e170736f-8893-4e55-9eec-8ad1954673be")
 		(property "Reference" "#PWR021"
-			(at 43.18 49.53 0)
+			(at 52.07 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7520,7 +7456,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 43.18 46.99 0)
+			(at 52.07 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7528,7 +7464,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 43.18 0)
+			(at 52.07 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7537,7 +7473,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 43.18 0)
+			(at 52.07 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7546,7 +7482,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 43.18 43.18 0)
+			(at 52.07 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7560,6 +7496,73 @@
 			(project "PlacaJunio"
 				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 109.22 83.82 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e18a6ae9-6a6d-4953-abdf-bd8e6134418d")
+		(property "Reference" "#PWR014"
+			(at 115.57 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 113.03 83.8199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 109.22 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "932cb98c-f9ca-4f92-a782-f5b66b4874f9")
+		)
+		(instances
+			(project "PlacaJunio"
+				(path "/b66ba01b-450c-41a1-983e-895a21bf9603"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -7760,8 +7763,8 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 48.26 35.56 270)
-		(mirror x)
+		(at 46.99 40.64 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7769,7 +7772,7 @@
 		(dnp no)
 		(uuid "fa82658d-d7fb-4365-a71d-fab4fe26a0f4")
 		(property "Reference" "J6"
-			(at 45.72 33.782 0)
+			(at 45.212 40.386 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7778,7 +7781,7 @@
 			)
 		)
 		(property "Value" "Terminal P4"
-			(at 48.26 33.782 0)
+			(at 45.466 43.434 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7787,7 +7790,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
-			(at 48.26 35.56 0)
+			(at 46.99 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7796,7 +7799,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 48.26 35.56 0)
+			(at 46.99 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7805,7 +7808,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 48.26 35.56 0)
+			(at 46.99 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7813,7 +7816,7 @@
 			)
 		)
 		(property "Enlace" "https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/282837-2/2187973"
-			(at 48.26 35.56 0)
+			(at 46.99 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7919,8 +7922,8 @@
 		)
 	)
 	(sheet
-		(at 49.53 87.63)
-		(size 30.48 19.05)
+		(at 43.18 87.63)
+		(size 30.48 10.16)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -7935,7 +7938,7 @@
 		)
 		(uuid "7bf72e12-8d12-4e35-9fad-8768305749e5")
 		(property "Sheetname" "Screw_Terminals"
-			(at 49.53 86.9184 0)
+			(at 43.18 86.9184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7944,7 +7947,7 @@
 			)
 		)
 		(property "Sheetfile" "Screw_Terminals.kicad_sch"
-			(at 49.53 107.2646 0)
+			(at 43.18 98.3746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7953,7 +7956,7 @@
 			)
 		)
 		(pin "PARACAIDAS 1" input
-			(at 49.53 91.44 180)
+			(at 43.18 91.44 180)
 			(uuid "1143868a-3aec-4046-b059-7ea19dfb705a")
 			(effects
 				(font
@@ -7963,7 +7966,7 @@
 			)
 		)
 		(pin "PARACAIDAS 2" input
-			(at 49.53 95.25 180)
+			(at 43.18 95.25 180)
 			(uuid "634f664d-dc0c-4f1f-8856-e2b6392a0b8e")
 			(effects
 				(font
@@ -7972,28 +7975,8 @@
 				(justify left)
 			)
 		)
-		(pin "PARACAIDAS 3" input
-			(at 49.53 99.06 180)
-			(uuid "2a574244-48dc-4a60-bec9-a22df91a2360")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "PARACAIDAS 4" input
-			(at 49.53 102.87 180)
-			(uuid "2a94a745-b1c9-4731-97be-cb726420930b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "SENSE1" output
-			(at 80.01 91.44 0)
+			(at 73.66 91.44 0)
 			(uuid "a46fd6fb-24f4-490a-ab06-7ac4e5d52b1a")
 			(effects
 				(font
@@ -8003,28 +7986,8 @@
 			)
 		)
 		(pin "SENSE2" output
-			(at 80.01 95.25 0)
+			(at 73.66 95.25 0)
 			(uuid "b28b4ded-d2ba-4185-8f06-8260d1d472a8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "SENSE3" output
-			(at 80.01 99.06 0)
-			(uuid "dc74b945-7607-416c-8f0b-cb47490b8b19")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "SENSE4" output
-			(at 80.01 102.87 0)
-			(uuid "3009fcd5-6196-4d78-bafd-8f851e193a4a")
 			(effects
 				(font
 					(size 1.27 1.27)

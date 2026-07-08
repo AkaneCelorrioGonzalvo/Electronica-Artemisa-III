@@ -114,27 +114,15 @@
   "project": {
     "files": [
       {
-        "name": "PlacaJunio.kicad_pcb",
-        "open": false,
-        "window": {
-          "display": 0,
-          "maximized": false,
-          "pos_x": 952,
-          "pos_y": 0,
-          "size_x": 976,
-          "size_y": 1088
-        }
-      },
-      {
         "name": "PlacaJunio.kicad_sch",
         "open": false,
         "window": {
           "display": 0,
-          "maximized": false,
-          "pos_x": -8,
-          "pos_y": 0,
-          "size_x": 976,
-          "size_y": 1088
+          "maximized": true,
+          "pos_x": -9,
+          "pos_y": -9,
+          "size_x": 1938,
+          "size_y": 1098
         }
       }
     ]

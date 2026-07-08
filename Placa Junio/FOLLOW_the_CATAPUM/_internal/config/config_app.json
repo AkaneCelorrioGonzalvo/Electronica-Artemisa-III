@@ -1,6 +1,6 @@
 {
     "PARAMETROS_APP": {
-        "COM": "COM3",
+        "COM": "COM7",
         "BAUDRATE": 115200,
         "TIMEOUT": 1.0,
         "AUTO_CONECTAR": false

@@ -63,8 +63,8 @@ SdFat SD;
 // ASIGNACIÓN DE PINES DEL LORA (E220) SEGÚN TU PCB
 // ------------------------------------------------------------
 #define LORA_AUX_PIN A3 
-#define LORA_RX_PIN  A4 
-#define LORA_TX_PIN  A5 
+#define LORA_RX_PIN  RX_PIN_NUMBER 
+#define LORA_TX_PIN  TX_PIN_NUMBER 
 #define LORA_M1_PIN  A6 
 #define LORA_M0_PIN  A7 
 
@@ -187,8 +187,7 @@ uint32_t tiempo_disparo_paracaidas = 0;
 // FUNCIONES AUXILIARES PARA DATOS SIMULADOS
 // ============================================================
 
-float aleatorioFloat(float minimo, float maximo, int decimales = 3)
-{
+float aleatorioFloat(float minimo, float maximo, int decimales = 3){
     float escala = pow(10, decimales);
     long min_int = (long)(minimo * escala);
     long max_int = (long)(maximo * escala);
@@ -203,8 +202,7 @@ int generarFlag()   { return random(0, 2); }
 // TAREAS ASÍNCRONAS DE RTOS (THREADS / TASKS)
 // ============================================================
 
-void taskSensores()
-{
+void taskSensores(){
     while (true) {
         if (IMU.accelerationAvailable()) {
             IMU.readAcceleration(acc_x, acc_y, acc_z);
@@ -229,8 +227,7 @@ void taskSensores()
     }
 }
 
-void taskGPS()
-{
+void taskGPS(){
     while (true) {
 #ifndef SIMULAR_GPS_NO_MONTADO
         while (Serial1.available() > 0) {
@@ -243,8 +240,7 @@ void taskGPS()
     }
 }
 
-void taskControlVuelo()
-{
+void taskControlVuelo(){
     tiempo_anterior_calc_vel = millis();
 
     while (true) {
@@ -324,8 +320,7 @@ void taskControlVuelo()
     }
 }
 
-void taskTelemetria()
-{
+void taskTelemetria(){
     while (true) {
 #ifdef SIMULAR_GPS_NO_MONTADO
         latitud  = aleatorioFloat(41.640000, 41.660000, 6);
@@ -371,8 +366,9 @@ void taskTelemetria()
         t.flag = (int16_t)flag_continuidad;
 
         // 2. Transmitir el struct binario completo (60 bytes)
-        ResponseStatus rs = e220ttl.sendMessage(&t, sizeof(Telemetria));
-        //DEBUG_PRINT("Transmision numero: ");
+        //ResponseStatus rs = e220ttl.sendMessage(&t, sizeof(Telemetria));
+        ResponseStatus rs = e220ttl.sendMessage("Test");
+        DEBUG_PRINTLN("Transmision numero: ");
         //DEBUG_PRINTLN(numeroTransmision);
         //numeroTransmision++;
 
@@ -413,7 +409,7 @@ void taskTelemetria()
             }
         }
 
-        ThisThread::sleep_for(std::chrono::milliseconds(100));
+        ThisThread::sleep_for(std::chrono::milliseconds(1000));
     }
 }
 

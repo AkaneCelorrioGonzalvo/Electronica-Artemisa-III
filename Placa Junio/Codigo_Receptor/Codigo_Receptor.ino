@@ -109,6 +109,7 @@ void loop() {
     // Verificar si se leyó correctamente (code 1 = Éxito)
     if (rsc.status.code == 1) {
       // Reconstruimos el struct a partir de los bytes recibidos
+      /*
       Telemetria t = *(Telemetria*) rsc.data;
 
       // Generamos el formato JSON idéntico para que el visualizador en Python lo entienda directamente
@@ -132,7 +133,9 @@ void loop() {
       json += "}";
 
       // El print va directo al puerto serie del PC (que escucha el Python)
-      Serial.println(json);
+      Serial.println(json);*/
+      String test = e220ttl.receiveMessage().data;
+      Serial.println(test);
 
     } else {
       Serial.print("Error RX: ");

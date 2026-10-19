@@ -63,8 +63,8 @@ SdFat SD;
 // ASIGNACIÓN DE PINES DEL LORA (E220) SEGÚN TU PCB
 // ------------------------------------------------------------
 #define LORA_AUX_PIN A3 
-#define LORA_RX_PIN  RX_PIN_NUMBER 
-#define LORA_TX_PIN  TX_PIN_NUMBER 
+#define LORA_RX_PIN  A4 
+#define LORA_TX_PIN  A5 
 #define LORA_M1_PIN  A6 
 #define LORA_M0_PIN  A7 
 
@@ -368,12 +368,14 @@ void taskTelemetria(){
         // 2. Transmitir el struct binario completo (60 bytes)
         //ResponseStatus rs = e220ttl.sendMessage(&t, sizeof(Telemetria));
         ResponseStatus rs = e220ttl.sendMessage("Test");
-        DEBUG_PRINTLN("Transmision numero: ");
-        //DEBUG_PRINTLN(numeroTransmision);
-        //numeroTransmision++;
+        DEBUG_PRINT("Transmision numero: ");
+        DEBUG_PRINTLN(numeroTransmision);
+        numeroTransmision++;
 
         #ifdef DEBUG_USB
-        if (rs.code != 1) {
+        int numero = rs.code;
+        DEBUG_PRINTLN(numero);
+        if (numero != 1) {
             DEBUG_PRINT("Error al transmitir por LoRa: ");
             DEBUG_PRINTLN(rs.getResponseDescription());
         }
@@ -446,10 +448,10 @@ void inicializarComunicaciones()
             cambiar_config = true;
         }
         // Forzar modo transparente (evita que la librería intente interpretar los primeros bytes del struct como dirección)
-        if (config.TRANSMISSION_MODE.fixedTransmission != FT_TRANSPARENT_TRANSMISSION) {
+        /*if (config.TRANSMISSION_MODE.fixedTransmission != FT_TRANSPARENT_TRANSMISSION) {
             config.TRANSMISSION_MODE.fixedTransmission = FT_TRANSPARENT_TRANSMISSION;
             cambiar_config = true;
-        }
+        }*/
 
         if (cambiar_config) {
             DEBUG_PRINTLN("Actualizando la configuracion del LoRa (Emisor)...");
@@ -468,8 +470,7 @@ void inicializarComunicaciones()
     e220ttl.setMode(MODE_0_NORMAL);
 }
 
-void inicializarSensores()
-{
+void inicializarSensores(){
     pinMode(PIN_PARACAIDAS, OUTPUT);
     digitalWrite(PIN_PARACAIDAS, LOW); 
     

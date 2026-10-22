@@ -448,10 +448,10 @@ void inicializarComunicaciones()
             cambiar_config = true;
         }
         // Forzar modo transparente (evita que la librería intente interpretar los primeros bytes del struct como dirección)
-        /*if (config.TRANSMISSION_MODE.fixedTransmission != FT_TRANSPARENT_TRANSMISSION) {
+        if (config.TRANSMISSION_MODE.fixedTransmission != FT_TRANSPARENT_TRANSMISSION) {
             config.TRANSMISSION_MODE.fixedTransmission = FT_TRANSPARENT_TRANSMISSION;
             cambiar_config = true;
-        }*/
+        }
 
         if (cambiar_config) {
             DEBUG_PRINTLN("Actualizando la configuracion del LoRa (Emisor)...");

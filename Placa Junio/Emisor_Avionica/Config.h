@@ -10,13 +10,13 @@
 #define DEBUG_USB
 
 #ifdef DEBUG_USB
-  #define DEBUG_BEGIN(baud)   Serial.begin(baud)
-  #define DEBUG_PRINT(...)    Serial.print(__VA_ARGS__)
-  #define DEBUG_PRINTLN(...)  Serial.println(__VA_ARGS__)
+  #define D_BEGIN(baud)   Serial.begin(baud)
+  #define D_PRINT(...)    Serial.print(__VA_ARGS__)
+  #define D_PRINTLN(...)  Serial.println(__VA_ARGS__)
 #else
-  #define DEBUG_BEGIN(baud)
-  #define DEBUG_PRINT(...)
-  #define DEBUG_PRINTLN(...)
+  #define D_BEGIN(baud)
+  #define D_PRINT(...)
+  #define D_PRINTLN(...)
 #endif
 
 // ============================================================
@@ -37,6 +37,6 @@ constexpr int PIN_SD_CS            = D12;
 // ============================================================
 // VELOCIDADES Y TIEMPOS
 // ============================================================
-constexpr uint32_t BAUDRATE_DEBUG    = 115200;
-constexpr uint32_t BAUDRATE_GPS      = 9600;
+constexpr uint32_t BAUDRATE_DEBUG     = 115200;
+constexpr uint32_t BAUDRATE_GPS       = 9600;
 constexpr uint32_t INTERVALO_ENVIO_MS = 100;

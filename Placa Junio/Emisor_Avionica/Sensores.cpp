@@ -20,21 +20,21 @@ void inicializarSensores() {
     pinMode(PIN_SENSE_PARACAIDAS, INPUT);
 
     if (!IMU.begin()) {
-        DEBUG_PRINTLN("{\"error\":\"Failed to initialize IMU!\"}");
+        D_PRINTLN("{\"error\":\"Failed to initialize IMU!\"}");
         while (1);
     }
 
     if (!BARO.begin()) {
-        DEBUG_PRINTLN("{\"error\":\"Failed to initialize Pressure Sensor!\"}");
+        D_PRINTLN("{\"error\":\"Failed to initialize Pressure Sensor!\"}");
         while (1);
     }
 
     if (!HS300x.begin()) {
-        DEBUG_PRINTLN("{\"error\":\"Failed to initialize Temperature/Humidity Sensor!\"}");
+        D_PRINTLN("{\"error\":\"Failed to initialize Temperature/Humidity Sensor!\"}");
         while (1);
     }
 
-    DEBUG_PRINTLN("Estabilizando y calibrando presion en tierra...");
+    D_PRINTLN("Estabilizando y calibrando presion en tierra...");
     delay(1000); 
     float suma_presion = 0.0;
     const int MUESTRAS_CALIBRACION = 50;
@@ -45,9 +45,9 @@ void inicializarSensores() {
     pressure_inicial = suma_presion / MUESTRAS_CALIBRACION;
     
     #ifdef DEBUG_USB
-    DEBUG_PRINT("Presion de referencia (P0): ");
-    DEBUG_PRINT(pressure_inicial, 3);
-    DEBUG_PRINTLN(" kPa");
+    D_PRINT("Presion de referencia (P0): ");
+    D_PRINT(pressure_inicial, 3);
+    D_PRINTLN(" kPa");
     #endif
 
     filtroAltura.inicializar(0.0, 0.05, 4.0);

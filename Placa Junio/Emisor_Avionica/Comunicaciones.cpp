@@ -32,17 +32,17 @@ static float aleatorioFloat(float minimo, float maximo, int decimales = 3) {
 }
 
 void inicializarComunicaciones() {
-    DEBUG_BEGIN(BAUDRATE_DEBUG); 
+    D_BEGIN(BAUDRATE_DEBUG); 
     Serial1.begin(BAUDRATE_GPS);      
 
     if (!lora_habilitado) {
-        DEBUG_PRINTLN("[INFO] LoRa DESACTIVADO (lora_habilitado = false). Omitiendo inicio del hardware.");
+        D_PRINTLN("[INFO] LoRa DESACTIVADO (lora_habilitado = false). Omitiendo inicio del hardware.");
         return;
     }
 
     loraSerial.begin(9600); 
 
-    DEBUG_PRINTLN("Iniciando modulo LoRa E220...");
+    D_PRINTLN("Iniciando modulo LoRa E220...");
     e220ttl.begin();
 
     ResponseStructContainer c = e220ttl.getConfiguration();
@@ -68,16 +68,16 @@ void inicializarComunicaciones() {
         }
 
         if (cambiar_config) {
-            DEBUG_PRINTLN("Actualizando la configuracion del LoRa (Emisor)...");
+            D_PRINTLN("Actualizando la configuracion del LoRa (Emisor)...");
             e220ttl.setConfiguration(config, WRITE_CFG_PWR_DWN_SAVE);
-            DEBUG_PRINTLN("¡Configuracion del Emisor guardada con exito!");
+            D_PRINTLN("¡Configuracion del Emisor guardada con exito!");
         } else {
-            DEBUG_PRINTLN("La configuracion del LoRa ya es correcta en el Emisor.");
+            D_PRINTLN("La configuracion del LoRa ya es correcta en el Emisor.");
         }
     } else {
         #ifdef DEBUG_USB
-        DEBUG_PRINT("No se pudo leer la configuracion del LoRa: ");
-        DEBUG_PRINTLN(c.status.getResponseDescription());
+        D_PRINT("No se pudo leer la configuracion del LoRa: ");
+        D_PRINTLN(c.status.getResponseDescription());
         #endif
     }
 
@@ -85,12 +85,12 @@ void inicializarComunicaciones() {
 }
 
 void inicializarSD() {
-    DEBUG_PRINTLN("Inicializando tarjeta SD con bus SPI personalizado...");
+    D_PRINTLN("Inicializando tarjeta SD con bus SPI personalizado...");
     if (SD.begin(SD_CONFIG)) {
-        DEBUG_PRINTLN("Tarjeta SD inicializada correctamente.");
+        D_PRINTLN("Tarjeta SD inicializada correctamente.");
         sd_disponible = true;
     } else {
-        DEBUG_PRINTLN("ERROR: Fallo al inicializar la tarjeta SD. El vuelo continuara sin registro local.");
+        D_PRINTLN("ERROR: Fallo al inicializar la tarjeta SD. El vuelo continuara sin registro local.");
         sd_disponible = false;
     }
 }
@@ -157,20 +157,20 @@ void taskTelemetria() {
         if (lora_habilitado) {
             // ResponseStatus rs = e220ttl.sendMessage(&t, sizeof(Telemetria));
             ResponseStatus rs = e220ttl.sendMessage("Test");
-            DEBUG_PRINT("Transmision numero: ");
-            DEBUG_PRINTLN(numeroTransmision);
+            D_PRINT("Transmision numero: ");
+            D_PRINTLN(numeroTransmision);
             numeroTransmision++;
 
             #ifdef DEBUG_USB
             int numero = rs.code;
-            DEBUG_PRINTLN(numero);
+            D_PRINTLN(numero);
             if (numero != 1) {
-                DEBUG_PRINT("Error al transmitir por LoRa: ");
-                DEBUG_PRINTLN(rs.getResponseDescription());
+                D_PRINT("Error al transmitir por LoRa: ");
+                D_PRINTLN(rs.getResponseDescription());
             }
             #endif
         } else {
-            DEBUG_PRINTLN("[LoRa DESACTIVADO] Omitiendo transmision de paquete.");
+            //D_PRINTLN("[LoRa DESACTIVADO] Omitiendo transmision de paquete.");
         }
 
         // 3. Registro en MicroSD
@@ -194,8 +194,7 @@ void taskTelemetria() {
             json += "\"flag\":" + String(flag_continuidad);              
             json += "}";
 
-            DEBUG_PRINTLN(json);
-
+            D_PRINTLN(json);
             File logFile = SD.open("vuelo.json", FILE_WRITE);
             if (logFile) {
                 logFile.println(json);

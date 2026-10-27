@@ -19,7 +19,7 @@ Thread hiloTelemetria(osPriorityBelowNormal);
 void setup() {
     delay(2000);
     
-    DEBUG_PRINTLN("Inicializando Comunicaciones...");
+    D_PRINTLN("Inicializando Comunicaciones...");
     inicializarComunicaciones();
 
     inicializarSD();

@@ -2,8 +2,8 @@
 #include "LoRa_E220.h"
 
 // Definición de pines para el ESP32-S3-Zero
-#define RX_PIN 44  // Pin RX de la placa (conectar al TX del LoRa)
-#define TX_PIN 43  // Pin TX de la placa (conectar al RX del LoRa)
+#define RX_PIN 9  // Pin RX de la placa (conectar al TX del LoRa)
+#define TX_PIN 10  // Pin TX de la placa (conectar al RX del LoRa)
 #define AUX_PIN 6
 #define M1_PIN 7
 #define M0_PIN 8

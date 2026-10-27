@@ -11,8 +11,8 @@
 #include <SPI.h>
 #include <SdFat.h> 
 
-// Librería del módulo de radio LoRa E220
-#include "LoRa_E220.h"
+// [LORA DESACTIVADO TEMPORALMENTE]
+// #include "LoRa_E220.h"
 
 // Librerías nativas de RTOS en Mbed OS
 #include <rtos.h>
@@ -29,7 +29,6 @@ using namespace rtos;
 // flujo de depuración por USB, optimizando la CPU de la placa en vuelo.
 #define DEBUG_USB
 
-// ------------------------------------------------------------
 // ------------------------------------------------------------
 // CONFIGURACIÓN DE MACROS DE DEPURACIÓN CONDICIONAL (VARIÁDICAS)
 // ------------------------------------------------------------
@@ -50,6 +49,7 @@ const int PIN_PARACAIDAS = D7;
 const int PIN_SENSE_PARACAIDAS = A0; 
 const int PIN_BUZZER = D13;          
 int numeroTransmision = 0;
+
 // ------------------------------------------------------------
 // ASIGNACIÓN DEL BUS SPI PERSONALIZADO PARA MICROSD (PCBWAY)
 // ------------------------------------------------------------
@@ -62,6 +62,8 @@ SdFat SD;
 // ------------------------------------------------------------
 // ASIGNACIÓN DE PINES DEL LORA (E220) SEGÚN TU PCB
 // ------------------------------------------------------------
+// [LORA DESACTIVADO TEMPORALMENTE]
+/*
 #define LORA_AUX_PIN A3 
 #define LORA_RX_PIN  A4 
 #define LORA_TX_PIN  A5 
@@ -70,6 +72,7 @@ SdFat SD;
 
 UART loraSerial(digitalPinToPinName(LORA_TX_PIN), digitalPinToPinName(LORA_RX_PIN), NC, NC);
 LoRa_E220 e220ttl(&loraSerial, LORA_AUX_PIN, LORA_M0_PIN, LORA_M1_PIN);
+*/
 
 // ============================================================
 // CONFIGURACIÓN DE PUERTOS Y VELOCIDADES (BAUDRATES)
@@ -80,7 +83,6 @@ const uint32_t BAUDRATE_GPS   = 9600;
 const uint32_t INTERVALO_ENVIO_MS = 100; // 100 ms = 10 Hz
 
 TinyGPSPlus gps;
-
 
 // ============================================================
 // DEFINE ESTRUCTURA DE TELEMETRÍA (60 Bytes Totales)
@@ -104,7 +106,6 @@ struct __attribute__((packed)) Telemetria {
     int16_t flag;
 };
 
-
 // ============================================================
 // INSTANCIACIÓN DE HILOS (THREADS / TASKS) DE RTOS
 // ============================================================
@@ -112,7 +113,6 @@ Thread hilosSensores(osPriorityAboveNormal);
 Thread hiloGPS(osPriorityNormal);              
 Thread hiloControlVuelo(osPriorityHigh);       
 Thread hiloTelemetria(osPriorityBelowNormal);   
-
 
 // ============================================================
 // ESTRUCTURA DEL FILTRO DE KALMAN (1D para la Altura)
@@ -142,12 +142,10 @@ struct FiltroKalman1D {
 
 FiltroKalman1D filtroAltura;
 
-
 // ============================================================
 // VARIABLES GLOBALES (Compartidas de forma segura)
 // ============================================================
-
-bool sd_disponible = false;
+bool sd_disponible = true;
 
 // Variables de sensores internos
 float acc_x = 0.0, acc_y = 0.0, acc_z = 0.0;
@@ -182,11 +180,9 @@ int flag_continuidad = 0;
 uint32_t tiempo_anterior_calc_vel = 0;
 uint32_t tiempo_disparo_paracaidas = 0;
 
-
 // ============================================================
 // FUNCIONES AUXILIARES PARA DATOS SIMULADOS
 // ============================================================
-
 float aleatorioFloat(float minimo, float maximo, int decimales = 3){
     float escala = pow(10, decimales);
     long min_int = (long)(minimo * escala);
@@ -196,7 +192,6 @@ float aleatorioFloat(float minimo, float maximo, int decimales = 3){
 
 int generarEstado() { return random(0, 5); }
 int generarFlag()   { return random(0, 2); }
-
 
 // ============================================================
 // TAREAS ASÍNCRONAS DE RTOS (THREADS / TASKS)
@@ -347,6 +342,9 @@ void taskTelemetria(){
         }
 
         // 1. Empaquetar los datos en la estructura binaria
+        /*
+        // [LORA DESACTIVADO TEMPORALMENTE]
+
         Telemetria t;
         t.acc_x = acc_x;
         t.acc_y = acc_y;
@@ -364,7 +362,7 @@ void taskTelemetria(){
         t.temperatura = temperatura;
         t.estado = (int16_t)estado_vuelo;
         t.flag = (int16_t)flag_continuidad;
-
+        
         // 2. Transmitir el struct binario completo (60 bytes)
         //ResponseStatus rs = e220ttl.sendMessage(&t, sizeof(Telemetria));
         ResponseStatus rs = e220ttl.sendMessage("Test");
@@ -380,6 +378,7 @@ void taskTelemetria(){
             DEBUG_PRINTLN(rs.getResponseDescription());
         }
         #endif
+        */
 
         // 3. Escribir localmente en la SD (Se mantiene en formato JSON para facilitar su lectura en la PC)
         if (sd_disponible) {
@@ -415,7 +414,6 @@ void taskTelemetria(){
     }
 }
 
-
 // ============================================================
 // FUNCIONES DE INICIALIZACIÓN
 // ============================================================
@@ -425,6 +423,8 @@ void inicializarComunicaciones()
     DEBUG_BEGIN(BAUDRATE_DEBUG); 
     Serial1.begin(BAUDRATE_GPS);      
 
+    // [LORA DESACTIVADO TEMPORALMENTE]
+    /*
     loraSerial.begin(9600); 
 
     DEBUG_PRINTLN("Iniciando modulo LoRa E220...");
@@ -460,7 +460,7 @@ void inicializarComunicaciones()
         } else {
             DEBUG_PRINTLN("La configuracion del LoRa ya es correcta en el Emisor.");
         }
-    }else {
+    } else {
         #ifdef DEBUG_USB
         DEBUG_PRINT("No se pudo leer la configuracion del LoRa: ");
         DEBUG_PRINTLN(c.status.getResponseDescription());
@@ -468,6 +468,7 @@ void inicializarComunicaciones()
     }
 
     e220ttl.setMode(MODE_0_NORMAL);
+    */
 }
 
 void inicializarSensores(){
@@ -513,7 +514,6 @@ void inicializarSensores(){
     filtroAltura.inicializar(0.0, 0.05, 4.0);
 }
 
-
 // ============================================================
 // SETUP
 // ============================================================
@@ -545,7 +545,6 @@ void setup()
     hiloControlVuelo.start(taskControlVuelo);
     hiloTelemetria.start(taskTelemetria);
 }
-
 
 // ============================================================
 // LOOP PRINCIPAL (MAIN THREAD)

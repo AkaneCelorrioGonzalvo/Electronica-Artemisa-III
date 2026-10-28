@@ -1,0 +1,56 @@
+CORRECCION DE TELEMETRIA E220 - PROTOCOLO CRC V1
+
+INSTALACION
+1. Sustituir Codigo_Receptor/Codigo_Receptor.ino por Codigo_Receptor.ino.
+2. Sustituir Emisor_Avionica/Comunicaciones.cpp por Comunicaciones.cpp.
+3. Conservar el resto de archivos de ambos proyectos.
+4. Compilar y cargar AMBAS placas. El protocolo nuevo no es compatible con
+   el envio antiguo de 54 bytes sin cabecera, ni con el texto Test.
+Las copias .txt contienen exactamente el mismo codigo para copiar y pegar.
+Los pines y constructores UART son los de los ZIP mas recientes.
+
+CAMBIOS
+Telemetria original de 54 bytes dentro de una trama de 64 bytes:
+A5 5A C3 3C | version 1 | longitud 54 | secuencia uint16 LE |
+telemetria 54 bytes | CRC16 CCITT-FALSE LE.
+CRC sobre los primeros 62 bytes, polinomio 0x1021, inicial 0xFFFF.
+La secuencia vuelve a cero al reiniciar el emisor y tras 65535.
+El receptor lee Serial2 byte a byte, conserva datos pendientes, busca
+cabecera y valida CRC. No utiliza receiveMessage para los datos de vuelo.
+Se verifican direccion 0, canal 1, modo transparente y RSSI adicional
+DESACTIVADO en ambos modulos. No se cambia la velocidad de radio: se
+imprime la existente; debe coincidir en ambos extremos.
+Se conserva la generacion JSON y el intervalo original de 1000 ms mas
+el tiempo de trabajo. La simulacion GPS sigue activada como en el original.
+
+DIAGNOSTICO (monitor a 115200)
+CRC_OK: tramas con CRC valido, antes de comprobar valores.
+CRC_ERROR: candidatos con cabecera y longitud correctas pero CRC incorrecto.
+BYTES_DESCARTADOS: bytes descartados buscando sincronizacion.
+DATOS_INVALIDOS: trama con CRC valido pero floats no finitos o estado/flag
+fuera del dominio actual. No genera JSON.
+SALTOS_SECUENCIA: numero de discontinuidades; NO numero exacto de paquetes
+perdidos. Un reinicio del emisor tambien puede incrementarlo.
+ULTIMA_SEQ: secuencia de la ultima trama con CRC valido.
+PENDIENTES: bytes parciales conservados.
+No todas las corrupciones suman CRC_ERROR: si danan la cabecera, suman
+bytes descartados. Un CRC no garantiza ausencia absoluta de errores.
+Si no llega nada, comprobar que se cargaron ambas versiones y comparar
+las velocidades de radio impresas. Si siguen los errores, conservar ambos
+logs y comprobar alimentacion, UART, configuracion y versiones instaladas.
+Los resultados del envio local no son acuses de recibo de la otra placa.
+
+PYTHON
+El JSON conserva las mismas claves. El receptor tambien imprime mensajes
+de arranque y resumen con prefijo #. El lector Python debe ignorar lineas
+que no empiecen por {, o desactivar MOSTRAR_DIAGNOSTICO y omitir el arranque.
+
+ALCANCE DE LA VERIFICACION
+Probado el parser C++ con AddressSanitizer y UndefinedBehaviorSanitizer
+(deteccion de fugas desactivada por limitacion del entorno): vector CRC
+123456789 -> 0x29B1, tramas consecutivas, vuelta de secuencia, ruido,
+bytes alterados/eliminados/insertados y tramas truncadas.
+No se dispone de arduino-cli ni de las placas: no se ha compilado el
+firmware completo ni probado en hardware. No se afirma que este resuelta
+la causa fisica o de temporizacion de las perdidas.
+No se han modificado sensores, control de vuelo ni su concurrencia.

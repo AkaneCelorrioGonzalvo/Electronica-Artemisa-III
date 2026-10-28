@@ -4,7 +4,7 @@
 // ============================================================
 // CONFIGURACIÓN DE PRUEBAS / SIMULACIÓN / DEPURACIÓN
 // ============================================================
-#define SIMULAR_GPS_NO_MONTADO
+//#define SIMULAR_GPS_NO_MONTADO
 
 // Comenta la siguiente línea antes del lanzamiento para desactivar USB
 #define DEBUG_USB

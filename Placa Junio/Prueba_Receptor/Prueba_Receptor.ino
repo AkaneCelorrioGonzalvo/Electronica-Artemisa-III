@@ -7,7 +7,7 @@
 #define M0_PIN  8
 
 // Mismo canal que el Emisor
-#define CANAL_LORA 1
+#define CANAL_LORA 18
 
 void cambiarModo(uint8_t m0, uint8_t m1) {
   digitalWrite(M0_PIN, m0);

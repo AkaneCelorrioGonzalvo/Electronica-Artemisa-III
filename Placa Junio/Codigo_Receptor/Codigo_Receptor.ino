@@ -159,8 +159,8 @@ void setup() {
   radioLista = false;
 
   // Pines del receptor que ya estaban funcionando.
-  Serial2.begin(9600, SERIAL_8N1, RX_PIN, TX_PIN);
-
+  //Serial2.begin(9600, SERIAL_8N1, RX_PIN, TX_PIN);
+  Serial2.begin(115200, SERIAL_8N1, RX_PIN, TX_PIN); //Me ha dicho gemini que lo haga para evitar la fragmentación
   if (!e220ttl.begin()) {
     Serial.println("ERROR: no se ha podido iniciar el E220.");
     return;
@@ -185,7 +185,7 @@ void setup() {
   Serial.print("Velocidad de radio: ");
   Serial.println(config.SPED.getAirDataRateDescription());
 
-  bool cambiar =
+  bool cambiar = //Habría que cambiar al canal 19, que el 1 no se puede usar. Y hay que tener un Duty de menos del 10%
     config.CHAN != 1 ||
     config.ADDH != 0 ||
     config.ADDL != 0 ||

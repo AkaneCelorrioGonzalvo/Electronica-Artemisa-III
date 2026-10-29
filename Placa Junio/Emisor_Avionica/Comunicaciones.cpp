@@ -120,8 +120,8 @@ void inicializarComunicaciones() {
         return;
     }
 
-    loraSerial.begin(9600); 
-
+    //loraSerial.begin(9600); 
+    loraSerial.begin(115200);//Me ha dicho Gemini que lo cambie para mitigar la fragmentación
     D_PRINTLN("Iniciando modulo LoRa E220...");
 
     if (!e220ttl.begin()) {
@@ -143,7 +143,8 @@ void inicializarComunicaciones() {
     c.close();
     D_PRINTLN("[LoRa] Velocidad de radio conservada:");
     D_PRINTLN(config.SPED.getAirDataRateDescription());
-    bool cambiar = config.CHAN != 1 || config.ADDH != 0 || config.ADDL != 0 ||
+    bool cambiar = config.CHAN != 1 || config.ADDH != 0 || config.ADDL != 0 ||//Habría que cambiar al canal 19, que el 1 no se puede usar
+                                                                              //Y hay que tener un Duty de menos del 10%
         config.TRANSMISSION_MODE.fixedTransmission != FT_TRANSPARENT_TRANSMISSION ||
         config.TRANSMISSION_MODE.enableRSSI != 0;
     config.CHAN = 1;

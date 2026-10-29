@@ -14,7 +14,7 @@ using namespace rtos;
 Thread hilosSensores(osPriorityAboveNormal);    
 Thread hiloGPS(osPriorityNormal);              
 Thread hiloControlVuelo(osPriorityHigh);       
-Thread hiloTelemetria(osPriorityNormal);   
+Thread hiloTelemetria(osPriorityHigh);  
 
 void setup() {
     delay(2000);

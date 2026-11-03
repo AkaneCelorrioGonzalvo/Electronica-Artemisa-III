@@ -11,14 +11,6 @@
 using namespace rtos;
 
 void inicializarSensores() {
-    pinMode(PIN_PARACAIDAS, OUTPUT);
-    digitalWrite(PIN_PARACAIDAS, LOW); 
-    
-    pinMode(PIN_BUZZER, OUTPUT);
-    digitalWrite(PIN_BUZZER, LOW); 
-    
-    pinMode(PIN_SENSE_PARACAIDAS, INPUT);
-
     if (!IMU.begin()) {
         D_PRINTLN("{\"error\":\"Failed to initialize IMU!\"}");
         while (1);

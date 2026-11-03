@@ -26,9 +26,10 @@ void setup() {
     inicializarSensores();
     inicializarControlVuelo();
 
-    randomSeed(analogRead(A1)); 
+    // Semilla aleatoria usando reloj interno
+    randomSeed(micros()); 
 
-    // Arranque de los hilos de ejecución
+    // Arranque concurrente de tareas RTOS
     hilosSensores.start(taskSensores);
     hiloGPS.start(taskGPS);
     hiloControlVuelo.start(taskControlVuelo);
@@ -36,6 +37,6 @@ void setup() {
 }
 
 void loop() {
-    // Dormir el hilo principal para liberar la CPU
+    // Dormir el hilo principal para liberar ciclos de CPU
     ThisThread::sleep_for(std::chrono::milliseconds(1000)); 
 }

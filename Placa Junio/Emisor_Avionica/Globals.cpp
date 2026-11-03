@@ -3,7 +3,6 @@
 // ============================================================
 // ACTIVACIÓN DE HARDWARE
 // ============================================================
-// Cambia a 'true' en cuanto tengáis y conectéis los módulos LoRa E220
 bool lora_habilitado = true; 
 bool sd_disponible   = true;
 

@@ -59,7 +59,7 @@ constexpr int PIN_DEBUG_5            = D6; // Sugerencia: Trigger Cámara o Cont
 // ============================================================
 // CONFIGURACIÓN LORA Y COMUNICACIONES
 // ============================================================
-constexpr uint8_t  LORA_CANAL         = 1; // Cambiar al canal regulado en campo (ej. 19)
+constexpr uint8_t  LORA_CANAL         = 19;
 constexpr uint32_t BAUDRATE_DEBUG     = 115200;
 constexpr uint32_t BAUDRATE_GPS       = 9600;
 constexpr uint32_t BAUDRATE_LORA_UART = 115200; 

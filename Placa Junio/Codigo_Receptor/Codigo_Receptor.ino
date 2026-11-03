@@ -185,15 +185,15 @@ void setup() {
   Serial.print("Velocidad de radio: ");
   Serial.println(config.SPED.getAirDataRateDescription());
 
-  bool cambiar = //Habría que cambiar al canal 19, que el 1 no se puede usar. Y hay que tener un Duty de menos del 10%
-    config.CHAN != 1 ||
+  bool cambiar = false //Habría que cambiar al canal 19, que el 1 no se puede usar. Y hay que tener un Duty de menos del 10%
+    config.CHAN != 19 ||
     config.ADDH != 0 ||
     config.ADDL != 0 ||
     config.TRANSMISSION_MODE.fixedTransmission !=
       FT_TRANSPARENT_TRANSMISSION ||
     config.TRANSMISSION_MODE.enableRSSI != 0;
 
-  config.CHAN = 1;
+  config.CHAN = 19;
   config.ADDH = 0;
   config.ADDL = 0;
   config.TRANSMISSION_MODE.fixedTransmission =
@@ -296,49 +296,7 @@ static bool recibirByte(uint8_t dato, Telemetria &t, uint16_t &secuencia) {
   }
   return false;
 }
-/*
-void loop() {
-  static uint8_t buffer[256];
-  static size_t cantidad = 0;
-  static unsigned long ultimoByte = 0;
 
-  if (!radioLista) {
-    delay(10);
-    return;
-  }
-
-  // Acumular sin imprimir mientras entran los bytes.
-  while (Serial2.available() > 0 &&
-         cantidad < sizeof(buffer)) {
-    int dato = Serial2.read();
-
-    if (dato >= 0) {
-      buffer[cantidad++] = (uint8_t)dato;
-      ultimoByte = millis();
-    }
-  }
-
-  // Volcar tras una pausa o cuando se llene el buffer.
-  if (cantidad > 0 &&
-      (millis() - ultimoByte >= 300 ||
-       cantidad == sizeof(buffer))) {
-
-    Serial.print("[RX HEX] bytes=");
-    Serial.print(cantidad);
-    Serial.print(" datos=");
-
-    for (size_t i = 0; i < cantidad; i++) {
-      if (buffer[i] < 0x10) Serial.print('0');
-      Serial.print(buffer[i], HEX);
-      Serial.print(' ');
-    }
-
-    Serial.println();
-    cantidad = 0;
-  }
-
-  delay(1);
-}*/
 void loop() {
   static unsigned long ultimoResumen = 0;
   static unsigned long ultimaTelemetria = 0;

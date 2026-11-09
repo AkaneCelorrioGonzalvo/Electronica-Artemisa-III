@@ -526,7 +526,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "PlacaJunio.step",
       "svg": "",
       "vrml": ""
     },

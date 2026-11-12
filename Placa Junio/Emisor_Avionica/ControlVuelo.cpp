@@ -9,11 +9,12 @@ using namespace rtos;
 
 static uint32_t tiempo_anterior_calc_vel = 0;
 static uint32_t tiempo_disparo_paracaidas = 0;
+static uint32_t tiempo_despegue = 0;
 static float altura_anterior = 0.0;
 static float vel_vertical_filtrada = 0.0;
+static int contador_suelo = 0;
 
 void inicializarControlVuelo() {
-    // Configuración de pines actuadores según PCB
     pinMode(PIN_PARACAIDAS_1, OUTPUT);
     digitalWrite(PIN_PARACAIDAS_1, LOW); 
 
@@ -25,7 +26,6 @@ void inicializarControlVuelo() {
     
     pinMode(PIN_SENSE_PARACAIDAS_1, INPUT);
 
-    // Pines de debug opcionales (inicializados en LOW)
     pinMode(PIN_DEBUG_1, OUTPUT);
     pinMode(PIN_DEBUG_2, OUTPUT);
     pinMode(PIN_DEBUG_3, OUTPUT);
@@ -61,14 +61,14 @@ void taskControlVuelo() {
             float d_altura = altura_filtrada - altura_anterior; 
             float vel_vertical_inst = d_altura / dt; 
 
-            vel_vertical_filtrada = (0.75 * vel_vertical_filtrada) + (0.25 * vel_vertical_inst);
+            vel_vertical_filtrada = (0.75f * vel_vertical_filtrada) + (0.25f * vel_vertical_inst);
             vel_vertical = vel_vertical_filtrada;
         }
 
         altura_anterior = altura_filtrada;
         tiempo_anterior_calc_vel = tiempo_actual;
 
-        // Comprobación de continuidad de la carga 1 en A0
+        // Comprobación de continuidad de la carga en A0
         int lectura_sense = analogRead(PIN_SENSE_PARACAIDAS_1);
         flag_continuidad = (lectura_sense > 500) ? 1 : 0;
 
@@ -76,14 +76,19 @@ void taskControlVuelo() {
             case 0: // En rampa / espera
                 digitalWrite(PIN_PARACAIDAS_1, LOW);
                 digitalWrite(PIN_PARACAIDAS_2, LOW);
-                if (altura_filtrada > 10.0) {
+                
+                // Despegue: altura > 4m O aceleración axial fuerte de empuje (<= -2.0G)
+                if (altura_filtrada > 4.0 || acc_x < -2.0f) {
+                    tiempo_despegue = millis();
                     estado_vuelo = 1; // Despegue detectado
                 }
                 break;
 
             case 1: // Ascenso
                 digitalWrite(PIN_PARACAIDAS_1, LOW);
-                if (altura_filtrada > 15.0 && vel_vertical < -1.0) {
+                
+                // Seguridad: no comprobar apogeo en los primeros 2.0s de quema del motor
+                if ((millis() - tiempo_despegue > 2000) && altura_filtrada > 15.0 && vel_vertical < -1.0) {
                     #if HABILITAR_DISPARO_PIROTECNIA
                     digitalWrite(PIN_PARACAIDAS_1, HIGH); 
                     #endif
@@ -93,11 +98,19 @@ void taskControlVuelo() {
                 break;
 
             case 2: // Descenso
-                if (millis() - tiempo_disparo_paracaidas >= 2000) {
+                if (millis() - tiempo_disparo_paracaidas >= 250) {
                     digitalWrite(PIN_PARACAIDAS_1, LOW); 
                 }
-                if (altura_filtrada < 3.0 && abs(vel_vertical) < 0.2) {
-                    estado_vuelo = 3; // Aterrizaje
+                
+                // Aterrizaje robusto contra bias: umbral en 5.5m y velocidad vertical baja estable
+                if (altura_filtrada < 5.5 && abs(vel_vertical) < 0.8) {
+                    contador_suelo++;
+                    // 50 ciclos x 20ms = 1 segundo continuo quieto en tierra
+                    if (contador_suelo >= 50) {
+                        estado_vuelo = 3; // Aterrizaje confirmado
+                    }
+                } else {
+                    contador_suelo = 0;
                 }
                 break;
 
@@ -108,7 +121,9 @@ void taskControlVuelo() {
         }
 
         // Buzzer intermitente post-aterrizaje para rescate
+        /*
         if (estado_vuelo == 3) {
+            
             if ((millis() / 500) % 2 == 0) {
                 digitalWrite(PIN_BUZZER, HIGH);
             } else {
@@ -116,7 +131,7 @@ void taskControlVuelo() {
             }
         } else {
             digitalWrite(PIN_BUZZER, LOW); 
-        }
+        }*/
 
         ThisThread::sleep_for(std::chrono::milliseconds(20));
     }

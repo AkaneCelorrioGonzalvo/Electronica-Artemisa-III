@@ -1,5 +1,6 @@
 #include "Comunicaciones.h"
 #include <string.h>
+#include <stdio.h>
 #include "Config.h"
 #include "Globals.h"
 
@@ -50,6 +51,7 @@ static uint16_t secuenciaTX = 0;
 static arduino::MbedSPI SD_SPI(D9, D11, D10); 
 static SdFat SD; 
 #define SD_CONFIG SdSpiConfig(PIN_SD_CS, DEDICATED_SPI, SD_SCK_MHZ(16), &SD_SPI)
+static File logFile; // Archivo mantenido abierto para máxima velocidad
 
 // Instancia UART y LoRa
 static UART loraSerial(digitalPinToPinName(LORA_TX_PIN), digitalPinToPinName(LORA_RX_PIN), NC, NC);
@@ -59,9 +61,10 @@ static ResponseStatus enviarUARTByteAByte(const uint8_t *datos, size_t longitud)
     ResponseStatus resultado;
     resultado.code = E220_SUCCESS;
 
+    // Timeout reducido a 150ms para no bloquear la tarea de telemetría si la radio falla
     unsigned long inicio = millis();
     while (digitalRead(LORA_AUX_PIN) == LOW) {
-        if (millis() - inicio >= 5000) {
+        if (millis() - inicio >= 150) {
             resultado.code = ERR_E220_TIMEOUT;
             return resultado;
         }
@@ -76,11 +79,11 @@ static ResponseStatus enviarUARTByteAByte(const uint8_t *datos, size_t longitud)
     }
 
     loraSerial.flush();
-    ThisThread::sleep_for(std::chrono::milliseconds(5));
+    ThisThread::sleep_for(std::chrono::milliseconds(2));
 
     inicio = millis();
     while (digitalRead(LORA_AUX_PIN) == LOW) {
-        if (millis() - inicio >= 5000) {
+        if (millis() - inicio >= 150) {
             resultado.code = ERR_E220_TIMEOUT;
             return resultado;
         }
@@ -104,7 +107,7 @@ void inicializarComunicaciones() {
     Serial1.begin(BAUDRATE_GPS);      
 
     if (!lora_habilitado) {
-        D_PRINTLN("[INFO] LoRa DESACTIVADO (lora_habilitado = false). Omitiendo inicio del hardware.");
+        D_PRINTLN("[INFO] LoRa DESACTIVADO. Omitiendo inicio del hardware.");
         return;
     }
 
@@ -112,17 +115,12 @@ void inicializarComunicaciones() {
     D_PRINTLN("Iniciando modulo LoRa E220...");
 
     if (!e220ttl.begin()) {
-        D_PRINTLN("[LoRa] ERROR en begin; revisar AUX/modos/alimentacion.");
+        D_PRINTLN("[LoRa] ERROR en begin.");
         return;
     }
     ResponseStructContainer c = e220ttl.getConfiguration();
-    if (c.status.code != 1) {
-        D_PRINTLN("[LoRa] ERROR al leer configuracion:");
-        D_PRINTLN(c.status.getResponseDescription());
-        return;
-    }
-    if (c.data == nullptr) {
-        D_PRINTLN("[LoRa] Configuracion vacia.");
+    if (c.status.code != 1 || c.data == nullptr) {
+        D_PRINTLN("[LoRa] ERROR al leer configuracion.");
         return;
     }
     Configuration config = *(Configuration *)c.data;
@@ -141,29 +139,7 @@ void inicializarComunicaciones() {
     config.TRANSMISSION_MODE.enableRSSI = 0;
 
     if (cambiar) {
-        ResponseStatus resultado = e220ttl.setConfiguration(config, WRITE_CFG_PWR_DWN_SAVE);
-        if (resultado.code != 1) {
-            D_PRINTLN("[LoRa] ERROR al guardar configuracion:");
-            D_PRINTLN(resultado.getResponseDescription());
-            return;
-        }
-    }
-
-    ResponseStructContainer comprobacion = e220ttl.getConfiguration();
-    if (comprobacion.status.code != 1) {
-        D_PRINTLN("[LoRa] ERROR al verificar configuracion:");
-        D_PRINTLN(comprobacion.status.getResponseDescription());
-        return;
-    }
-    if (comprobacion.data == nullptr) return;
-    Configuration verificada = *(Configuration *)comprobacion.data;
-    comprobacion.close();
-
-    if (verificada.CHAN != LORA_CANAL || verificada.ADDH != 0 || verificada.ADDL != 0 ||
-        verificada.TRANSMISSION_MODE.fixedTransmission != FT_TRANSPARENT_TRANSMISSION ||
-        verificada.TRANSMISSION_MODE.enableRSSI != 0) {
-        D_PRINTLN("[LoRa] ERROR: configuracion no coincide con lo guardado.");
-        return;
+        e220ttl.setConfiguration(config, WRITE_CFG_PWR_DWN_SAVE);
     }
 
     if (e220ttl.setMode(MODE_0_NORMAL) != 1) {
@@ -172,16 +148,23 @@ void inicializarComunicaciones() {
     }
 
     radioLista = true;
-    D_PRINTLN("[LoRa] Inicializado OK: protocolo CRC v1, trama de 64 bytes.");
+    D_PRINTLN("[LoRa] Inicializado OK.");
 }
 
 void inicializarSD() {
-    D_PRINTLN("Inicializando tarjeta SD con bus SPI personalizado...");
+    D_PRINTLN("Inicializando tarjeta SD...");
     if (SD.begin(SD_CONFIG)) {
-        D_PRINTLN("Tarjeta SD inicializada correctamente.");
-        sd_disponible = true;
+        // Abrir el archivo una sola vez al inicio
+        logFile = SD.open("vuelo.json", FILE_WRITE);
+        if (logFile) {
+            D_PRINTLN("SD y vuelo.json listos para escritura.");
+            sd_disponible = true;
+        } else {
+            D_PRINTLN("ERROR: No se pudo abrir vuelo.json.");
+            sd_disponible = false;
+        }
     } else {
-        D_PRINTLN("ERROR: Fallo al inicializar la tarjeta SD. El vuelo continuara sin registro local.");
+        D_PRINTLN("ERROR: Fallo al inicializar SD.");
         sd_disponible = false;
     }
 }
@@ -200,6 +183,9 @@ void taskGPS() {
 }
 
 void taskTelemetria() {
+    static uint8_t sync_count = 0;
+    char jsonBuffer[256];
+
     while (true) {
 #ifdef SIMULAR_GPS_NO_MONTADO
         latitud  = aleatorioFloat(41.640000, 41.660000, 6);
@@ -225,7 +211,7 @@ void taskTelemetria() {
             vel_max = vel_horizontal;
         }
 
-        // 1. Estructura de telemetría
+        // 1. Estructura de telemetría binaria LoRa
         Telemetria t;
         t.acc_x = acc_x;
         t.acc_y = acc_y;
@@ -244,57 +230,32 @@ void taskTelemetria() {
         t.estado = (int16_t)estado_vuelo;
         t.flag = (int16_t)flag_continuidad;
 
-        // 2. Transmisión LoRa empaquetada
+        // 2. Transmisión LoRa
         if (lora_habilitado && radioLista) {
             uint8_t trama[TAM_TRAMA];
             construirTrama(t, secuenciaTX++, trama);
-            ResponseStatus rs = enviarUARTByteAByte(trama, sizeof(trama));
-
-            D_PRINT("[TX HEX] ");
-            for (size_t i = 0; i < sizeof(trama); i++) {
-                if (trama[i] < 0x10) D_PRINT('0');
-                D_PRINT(trama[i], HEX);
-                D_PRINT(' ');
-            }
-            D_PRINTLN();
-
-            D_PRINT("Transmision numero: ");
-            D_PRINTLN(numeroTransmision++);
-
-            #ifdef DEBUG_USB
-            if (rs.code != 1) {
-                D_PRINT("Error al transmitir por LoRa: ");
-                D_PRINTLN(rs.getResponseDescription());
-            }
-            #endif
+            enviarUARTByteAByte(trama, sizeof(trama));
         }
 
-        // 3. Registro local en MicroSD
-        if (sd_disponible) {
-            String json = "{";
-            json += "\"acc_x\":" + String(acc_x, 3) + ",";
-            json += "\"acc_y\":" + String(acc_y, 3) + ",";
-            json += "\"acc_z\":" + String(acc_z, 3) + ",";
-            json += "\"pitch\":" + String(pitch, 2) + ",";
-            json += "\"roll\":" + String(roll, 2) + ",";
-            json += "\"yaw\":" + String(yaw, 2) + ",";
-            json += "\"vel\":" + String(vel_horizontal, 2) + ",";       
-            json += "\"vel_max\":" + String(vel_max, 2) + ",";           
-            json += "\"latitud\":" + String(latitud, 6) + ",";           
-            json += "\"longitud\":" + String(longitud, 6) + ",";         
-            json += "\"altura\":" + String(altura_filtrada, 2) + ",";     
-            json += "\"altura_max\":" + String(altura_max, 2) + ",";     
-            json += "\"vel_vert\":" + String(vel_vertical, 2) + ",";     
-            json += "\"temperatura\":" + String(temperatura, 2) + ",";   
-            json += "\"estado\":" + String(estado_vuelo) + ",";          
-            json += "\"flag\":" + String(flag_continuidad);              
-            json += "}";
+        // 3. Registro local en MicroSD (Usa buffer estático, sin String ni malloc)
+        if (sd_disponible && logFile) {
+            snprintf(jsonBuffer, sizeof(jsonBuffer),
+                "{\"acc_x\":%.3f,\"acc_y\":%.3f,\"acc_z\":%.3f,\"pitch\":%.2f,\"roll\":%.2f,\"yaw\":%.2f,"
+                "\"vel\":%.2f,\"vel_max\":%.2f,\"latitud\":%.6f,\"longitud\":%.6f,\"altura\":%.2f,"
+                "\"altura_max\":%.2f,\"vel_vert\":%.2f,\"temperatura\":%.2f,\"estado\":%d,\"flag\":%d}",
+                acc_x, acc_y, acc_z, pitch, roll, yaw,
+                vel_horizontal, vel_max, latitud, longitud,
+                altura_filtrada, altura_max, vel_vertical, temperatura,
+                estado_vuelo, flag_continuidad
+            );
 
-            D_PRINTLN(json);
-            File logFile = SD.open("vuelo.json", FILE_WRITE);
-            if (logFile) {
-                logFile.println(json);
-                logFile.close(); 
+            D_PRINTLN(jsonBuffer);
+            logFile.println(jsonBuffer);
+
+            // Sincronizar físicamente a la SD cada 1 segundo (cada 10 muestras de 100ms)
+            if (++sync_count >= 10) {
+                logFile.flush();
+                sync_count = 0;
             }
         }
 

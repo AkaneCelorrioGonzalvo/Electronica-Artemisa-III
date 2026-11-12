@@ -3,6 +3,7 @@
 #include "Globals.h"
 
 #include <math.h>
+#include <Wire.h>
 #include <Arduino_BMI270_BMM150.h>
 #include <Arduino_LPS22HB.h>
 #include <Arduino_HS300x.h>
@@ -10,10 +11,24 @@
 
 using namespace rtos;
 
+#define BMI270_I2C_ADDR   0x68
+#define BMI270_ACC_RANGE  0x41
+#define BMI270_RANGE_16G  0x03  // Desbloqueo a escala completa +/-16G
+
 void inicializarSensores() {
     if (!IMU.begin()) {
         D_PRINTLN("{\"error\":\"Failed to initialize IMU!\"}");
         while (1);
+    }
+
+    // Configuración de escala a ±16G por Wire1 (bus interno del Nano 33 BLE)
+    Wire1.beginTransmission(BMI270_I2C_ADDR);
+    Wire1.write(BMI270_ACC_RANGE);
+    Wire1.write(BMI270_RANGE_16G);
+    if (Wire1.endTransmission() == 0) {
+        D_PRINTLN("IMU configurada con exito a +/-16G.");
+    } else {
+        D_PRINTLN("{\"warning\":\"Fallo al poner rango a 16G, permanece en 4G\"}");
     }
 
     if (!BARO.begin()) {
@@ -26,7 +41,7 @@ void inicializarSensores() {
         while (1);
     }
 
-    D_PRINTLN("Estabilizando y calibrando presion en tierra...");
+    D_PRINTLN("Calibrando presion en tierra...");
     delay(1000); 
     float suma_presion = 0.0;
     const int MUESTRAS_CALIBRACION = 50;
@@ -42,13 +57,19 @@ void inicializarSensores() {
     D_PRINTLN(" kPa");
     #endif
 
-    filtroAltura.inicializar(0.0, 0.05, 4.0);
+    // q subido a 0.8 para eliminar el retraso (lag) durante la subida vertical rápida
+    filtroAltura.inicializar(0.0, 0.8, 4.0);
 }
 
 void taskSensores() {
     while (true) {
         if (IMU.accelerationAvailable()) {
             IMU.readAcceleration(acc_x, acc_y, acc_z);
+            
+            // Corrección de escala por 4 (la librería divide entre 8192 asumiendo 4G)
+            acc_x *= 4.0f;
+            acc_y *= 4.0f;
+            acc_z *= 4.0f;
         }
         if (IMU.gyroscopeAvailable()) {
             IMU.readGyroscope(gyro_x, gyro_y, gyro_z);

@@ -7,7 +7,7 @@
 //#define SIMULAR_GPS_NO_MONTADO
 
 // Comenta la siguiente línea antes del lanzamiento para desactivar USB
-//#define DEBUG_USB
+#define DEBUG_USB
 
 #ifdef DEBUG_USB
   #define D_BEGIN(baud)   Serial.begin(baud)
